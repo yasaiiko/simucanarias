@@ -440,6 +440,26 @@
     };
   }
 
+  // Free word-of-mouth: let candidates pass the simulator to their study group.
+  function shareBox() {
+    const url = C.siteUrl || 'https://simucanarias.pages.dev/';
+    const text = 'Estoy practicando el ejercicio único del Gobierno de Canarias con exámenes oficiales y la corrección real de 2026 (calculadora y examen completo gratis):';
+    const enc = encodeURIComponent;
+    return `<div class="card" style="margin:18px 0"><h3>¿Conoces a alguien que oposite?</h3>
+      <p class="small muted">Pásale el simulador a tu grupo de estudio: la parte gratuita funciona sin registro.</p>
+      <div class="cta-row" style="margin-bottom:0">
+        <a class="btn small" href="https://wa.me/?text=${enc(text + ' ' + url)}" target="_blank" rel="noopener">Compartir por WhatsApp</a>
+        <a class="btn small ghost" href="https://t.me/share/url?url=${enc(url)}&text=${enc(text)}" target="_blank" rel="noopener">Telegram</a>
+        <button class="btn small ghost" type="button" data-copy="${esc(url)}">Copiar enlace</button>
+      </div></div>`;
+  }
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-copy]');
+    if (!b) return;
+    const done = () => { b.textContent = '¡Copiado!'; setTimeout(() => { b.textContent = 'Copiar enlace'; }, 1500); };
+    try { navigator.clipboard.writeText(b.dataset.copy).then(done, () => prompt('Copia el enlace:', b.dataset.copy)); } catch { prompt('Copia el enlace:', b.dataset.copy); }
+  });
+
   function result(filter) {
     SES = LS.get(SKEY, null) || SES;
     if (!SES || !SES.done) { location.hash = '#/'; return; }
@@ -489,6 +509,7 @@
       ${verdict}
       <div class="grid2" style="margin-top:14px">${R.parts.map(partCard).join('')}</div>
       ${upsell}
+      ${shareBox()}
       <h2 style="margin-top:28px;scroll-margin-top:12px" id="review">Revisión</h2>
       <div class="tabs">${[['all', 'Todas'], ['ko', 'Falladas'], ['blank', 'En blanco'], ['doubt', 'Dudosas']].map(([k, l]) => `<a class="tab ${filter === k ? 'on' : ''}" href="#/result/${k}" style="text-decoration:none">${l}</a>`).join('')}</div>
       ${review || '<p class="muted" style="margin-top:14px">No hay preguntas en este filtro.</p>'}

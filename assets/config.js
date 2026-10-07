@@ -1,4 +1,5 @@
 window.SIMU_CONFIG = {
+  siteUrl: 'https://simucanarias.pages.dev/',
   // Gumroad product (filled in after creating it)
   gumroadUrl: 'https://carrion840.gumroad.com/l/simucanarias?wanted=true',
   gumroadProductId: '2ul9cUQhVNOd1vueL6u7Hw==',

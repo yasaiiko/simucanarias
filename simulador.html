@@ -10,13 +10,19 @@
 <meta property="og:description" content="Exámenes oficiales C1/C2 del Gobierno de Canarias corregidos con las reglas reales de 2026. Examen completo gratis.">
 <meta property="og:image" content="https://yasaiiko.github.io/simucanarias/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
+<canvas id="aurora" aria-hidden="true"></canvas>
 <header class="site" id="site-header">
   <div class="wrap">
     <a class="logo" href="./"><span class="logo-mark">S</span>SimuCanarias</a>
     <nav class="top">
+      <span class="indep">Herramienta independiente, no oficial</span>
       <a href="#/" class="hide-sm">Inicio del simulador</a>
       <span id="pro-badge"></span>
     </nav>
@@ -46,5 +52,6 @@
 <script src="assets/scoring.js"></script>
 <script src="assets/license.js"></script>
 <script src="assets/sim.js"></script>
+<script src="assets/bg.js" defer></script>
 </body>
 </html>

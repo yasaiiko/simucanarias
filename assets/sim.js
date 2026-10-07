@@ -49,8 +49,12 @@
   // Allow ?key=XXXX deep links (e.g. from the Gumroad receipt)
   (async () => {
     const k = new URLSearchParams(location.search).get('key');
-    if (k && C.gumroadProductId) { const r = await lic.activate(k); if (r.ok) history.replaceState(null, '', location.pathname + location.hash); }
-    else await lic.restore();
+    if (k && C.gumroadProductId) {
+      const r = await lic.activate(k);
+      history.replaceState(null, '', location.pathname + location.hash);
+      if (!r.ok) await lic.restore();
+      renderBadge(); route();
+    } else await lic.restore();
     renderBadge();
   })();
 
@@ -86,9 +90,20 @@
   function newSession(def) {
     SES = { title: def.title, parts: def.parts, minutes: def.minutes, started: null, answers: {}, doubts: {}, chosen: {}, active: 0, done: false, result: null, practice: !!def.practice };
     save();
-    location.hash = '#/run';
+    history.replaceState(null, '', '#/run');
+    run();
   }
   const save = () => LS.set(SKEY, SES);
+  // Total scored questions of a part; a supuesto part not chosen yet still counts its expected size.
+  const partTotal = (p, i) => scoredSet(p.choices && SES.chosen[i] == null ? p.choices[0].questions : partQs(p, i)).length;
+  const pendingSession = () => { const s = LS.get(SKEY, null) || SES; return s && s.started && !s.done ? s : null; };
+  async function startGuarded(build) {
+    const s = pendingSession();
+    if (s && !confirm(`Tienes un examen a medias («${s.title}»). ¿Descartarlo y empezar uno nuevo?`)) {
+      SES = s; history.replaceState(null, '', '#/run'); return run();
+    }
+    newSession(await build());
+  }
   function partQs(p, pi) {
     if (p.choices) { const c = SES.chosen[pi]; return c == null ? [] : p.choices[c].questions; }
     return p.questions;
@@ -129,9 +144,10 @@
   function submit(auto) {
     if (SES.done) return;
     if (!auto) {
-      const total = SES.parts.reduce((s, p, i) => s + scoredSet(partQs(p, i)).length, 0);
+      const total = SES.parts.reduce((s, p, i) => s + partTotal(p, i), 0);
       const answered = SES.parts.reduce((s, p, i) => s + scoredSet(partQs(p, i)).filter(q => SES.answers[q.uid]).length, 0);
-      if (!confirm(`¿Entregar el examen? Has respondido ${answered} de ${total} preguntas.`)) return;
+      const unstarted = SES.parts.some((p, i) => p.choices && SES.chosen[i] == null);
+      if (!confirm(`¿Entregar el examen? Has respondido ${answered} de ${total} preguntas.` + (unstarted ? '\n\nOjo: todavía no has elegido el supuesto de la parte 2, así que esa parte contará como 0.' : ''))) return;
     }
     clearInterval(TICK);
     const parts = SES.parts.map((p, i) => gradePart(p, i));
@@ -150,8 +166,8 @@
     hist.unshift({ t: Date.now(), title: SES.title, marks: parts.map(p => p.mark), mean: ex ? ex.mean : null });
     LS.set('simu_history_v1', hist.slice(0, 50));
     save();
-    location.hash = '#/result';
-    if (location.hash === '#/result') route();
+    history.replaceState(null, '', '#/result');
+    result();
   }
 
   // ---------------- Builders ----------------
@@ -227,7 +243,7 @@
   }
 
   // ---------------- Views ----------------
-  function view(html) { app.innerHTML = html; window.scrollTo(0, 0); }
+  function view(html, keep) { app.innerHTML = html; if (!keep) window.scrollTo(0, 0); }
 
   async function home() {
     clearInterval(TICK);
@@ -331,14 +347,14 @@
   }
 
   function run() {
-    SES = LS.get(SKEY, null);
+    SES = LS.get(SKEY, null) || SES;
     if (!SES) { location.hash = '#/'; return; }
-    if (SES.done) { location.hash = '#/result'; return; }
+    if (SES.done) { history.replaceState(null, '', '#/result'); return result(); }
     if (!SES.started) return intro();
     const pi = SES.active;
     const p = SES.parts[pi];
     const qs = partQs(p, pi);
-    const allScored = SES.parts.reduce((s, pp, i) => s + scoredSet(partQs(pp, i)).length, 0);
+    const allScored = SES.parts.reduce((s, pp, i) => s + partTotal(pp, i), 0);
     const tabs = SES.parts.length > 1 ? `<div class="tabs">${SES.parts.map((pp, i) => `<button class="tab ${i === pi ? 'on' : ''}" data-part="${i}">${esc(pp.title)}</button>`).join('')}</div>` : '';
     let choiceHtml = '';
     if (p.choices) {
@@ -425,11 +441,12 @@
   }
 
   function result(filter) {
-    SES = LS.get(SKEY, null);
+    SES = LS.get(SKEY, null) || SES;
     if (!SES || !SES.done) { location.hash = '#/'; return; }
     clearInterval(TICK);
     $('#site-header').classList.remove('hide');
     const R = SES.result;
+    const keep = !!filter;
     filter = filter || 'all';
     const partCard = (r) => {
       const g = S.RULES[r.kind].group;
@@ -472,11 +489,12 @@
       ${verdict}
       <div class="grid2" style="margin-top:14px">${R.parts.map(partCard).join('')}</div>
       ${upsell}
-      <h2 style="margin-top:28px">Revisión</h2>
+      <h2 style="margin-top:28px;scroll-margin-top:12px" id="review">Revisión</h2>
       <div class="tabs">${[['all', 'Todas'], ['ko', 'Falladas'], ['blank', 'En blanco'], ['doubt', 'Dudosas']].map(([k, l]) => `<a class="tab ${filter === k ? 'on' : ''}" href="#/result/${k}" style="text-decoration:none">${l}</a>`).join('')}</div>
       ${review || '<p class="muted" style="margin-top:14px">No hay preguntas en este filtro.</p>'}
       <div class="cta-row"><a class="btn" href="#/">Hacer otro</a></div>
-    </div>`);
+    </div>`, keep);
+    if (keep) { const rv = $('#review'); if (rv) rv.scrollIntoView(); }
   }
 
   // ---------------- Router ----------------
@@ -489,15 +507,15 @@
       if (r === 'result') return result(a);
       if (r === 'exam' && a) {
         if (locked(a)) return lockedPreview(a);
-        return newSession(await buildExam(a));
+        return startGuarded(() => buildExam(a));
       }
-      if (r === 'sim' && a) return guardPro(async () => newSession(await buildSimulacro(a, false)));
-      if (r === 'p2' && a) return guardPro(async () => newSession(await buildSimulacro(a, true)));
-      if (r === 'random') return guardPro(async () => newSession(await buildRandom(a || 'all', +(b || 25))));
+      if (r === 'sim' && a) return guardPro(() => startGuarded(() => buildSimulacro(a, false)));
+      if (r === 'p2' && a) return guardPro(() => startGuarded(() => buildSimulacro(a, true)));
+      if (r === 'random') return guardPro(() => startGuarded(() => buildRandom(a || 'all', +(b || 25))));
       if (r === 'falladas') return guardPro(async () => {
         const qs = await falladasQs();
         if (!qs.length) { location.hash = '#/'; return; }
-        newSession({ title: `Repaso de falladas · ${plural(qs.length, 'pregunta')}`, minutes: Math.max(5, qs.length), practice: true, parts: [{ kind: 'general', title: 'Repaso', questions: renumber(qs) }] });
+        await startGuarded(async () => ({ title: `Repaso de falladas · ${plural(qs.length, 'pregunta')}`, minutes: Math.max(5, qs.length), practice: true, parts: [{ kind: 'general', title: 'Repaso', questions: renumber(qs) }] }));
       });
       return home();
     } catch (err) {

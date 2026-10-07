@@ -179,12 +179,15 @@
   // Calculator
   const clamp = (v, max) => Math.max(0, Math.min(max, parseInt(v, 10) || 0));
   function part(kind, a, f, b, out, n) {
+    const rawA = parseInt($(a).value, 10) || 0, rawF = parseInt($(f).value, 10) || 0;
     let A = clamp($(a).value, n), F = clamp($(f).value, n - A);
     $(b).value = n - A - F;
+    const adjusted = rawA !== A || rawF !== F;
     const r = S.score(kind, A, F, n);
     const g = S.RULES[kind].group;
     $(out).innerHTML = `<div class="big">${S.fmt(r.mark)}</div>
       <div class="small">${A} × ${S.fmt(r.value)} = ${S.fmt(A * r.value)} · penalización ${S.fmt(r.penalty)} (${r.groups} grupo${r.groups === 1 ? '' : 's'} de ${g} fallos)</div>
+      ${adjusted ? `<div class="small" style="color:var(--warn);margin-top:6px">Aciertos + fallos no puede pasar de ${n}: calculamos con ${A} aciertos y ${F} fallos.</div>` : ''}
       <div class="small" style="margin-top:6px">${r.pass ? '<span class="tag ok">Parte superada (≥ 5)</span>' : '<span class="tag bad">No llega a 5</span>'}
       ${r.nextWrongCost ? `<span class="tag warn">El próximo fallo te resta ${S.fmt(r.nextWrongCost)}</span>` : `<span class="tag">${r.freeWrongsLeft === 1 ? 'Te queda 1 fallo' : `Te quedan ${r.freeWrongsLeft} fallos`} "gratis" antes de restar</span>`}</div>`;
     return r;

@@ -126,6 +126,7 @@ header.site nav.top .btn.small { white-space: nowrap; }
 .sec h3 { margin-top: 18px; }
 .sec ul, .sec ol { padding-left: 22px; margin: 0 0 12px; }
 .sec li { margin: 6px 0; }
+.sec ul.check { padding-left: 0; }
 
 /* breadcrumb */
 .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 2px 8px; padding: 0; margin: 4px 0 6px; font-size: .86rem; color: var(--muted); }
@@ -487,7 +488,7 @@ def pass_card(heading_tag='p', heading='Pase hasta el examen · C1 + C2'):
 <p class="price">{PRICE} <small>pago único · IVA incl. · reembolso en 14 días</small></p>
 <ul class="check">
 <li>{TOTAL_QUESTIONS} preguntas oficiales de 6 exámenes: C2 (test y supuestos) y C1 (tests y supuestos A/B)</li>
-<li>Simulacro completo cronometrado: test + 1 de 2 supuestos oficiales, 100 minutos</li>
+<li>Simulacro completo cronometrado: test + 1 de 2 supuestos oficiales (100 min en C1; 80 en C2, cuyos supuestos oficiales tienen 10 preguntas)</li>
 <li>Modo «solo parte 2» para quien conserva la nota del primer ejercicio</li>
 <li>Tests aleatorios con todo el banco oficial y repaso de falladas</li>
 <li>Historial de notas e informe de estrategia de blancos</li>
@@ -681,7 +682,7 @@ def page_exam_c2(exams):
 
 <section aria-labelledby="h-mas">
 <h2 id="h-mas">¿Quieres más exámenes oficiales?</h2>
-<p>Este examen es gratis en el simulador. Con el pase desbloqueas todos los demás: los supuestos prácticos de C2, los tests y supuestos A/B de C1 y los simulacros completos de 100 minutos.</p>
+<p>Este examen es gratis en el simulador. Con el pase desbloqueas todos los demás: los supuestos prácticos de C2, los tests y supuestos A/B de C1 y los simulacros completos cronometrados (test + supuesto).</p>
 {pass_card()}
 </section>
 
@@ -746,7 +747,7 @@ def page_exam_c1(exams):
 
 <section aria-labelledby="h-pase">
 <h2 id="h-pase">Simulacro C1 completo: test + supuestos A/B</h2>
-<p>En el simulador, con el pase, haces el ejercicio único C1 como el día del examen: el test teórico y eliges 1 de los 2 supuestos prácticos oficiales (A o B), con 100 minutos de cronómetro, corrección automática y revisión pregunta a pregunta. Antes de pagar puedes probar gratis el examen oficial completo de C2 para ver cómo funciona.</p>
+<p>En el simulador, con el pase, haces el ejercicio único C1 como el día del examen: un test de 50 preguntas (las 25 de este examen más 25 del test C1 de 2022) y eliges 1 de los 2 supuestos prácticos oficiales (A o B), con 100 minutos de cronómetro, corrección automática y revisión pregunta a pregunta. Antes de pagar puedes probar gratis el examen oficial completo de C2 para ver cómo funciona.</p>
 {pass_card()}
 {cta_band('¿Primero quieres probarlo?', 'El examen oficial C2 de 2022 (50 preguntas + reserva) es gratis, sin registro. La parte general comparte gran parte de la normativa con el C1.')}
 </section>
@@ -1001,7 +1002,7 @@ def page_penal():
 <section class="card sec" aria-labelledby="h-gratis">
 <h2 id="h-gratis">Los «fallos gratis»</h2>
 <p>Como solo restan los grupos completos, el 1.º y el 2.º fallo del test no restan nada, y el 1.º del supuesto tampoco. Lo mismo pasa dentro de cada grupo: con 4 fallos en el test, el 5.º es gratis y el 6.º resta 0,20.</p>
-<p>Durante el examen no sabes cuáles has fallado, así que la decisión de contestar o no debe apoyarse en la tabla de valor esperado. Donde sí ayuda es al practicar: el simulador te dice en cada intento cuántos fallos «gratis» te quedaban y, si marcas las dudosas, qué nota habrías sacado dejándolas en blanco. Así aprendes si arriesgar te suma o te resta.</p>
+<p>Durante el examen no sabes cuáles has fallado, así que la decisión de contestar o no debe apoyarse en la tabla de valor esperado. Donde sí ayuda es al practicar: el simulador te dice en cada intento cuántos de tus fallos no restaron (los del último grupo incompleto) y, si marcas las dudosas, qué nota habrías sacado dejándolas en blanco. Así aprendes si arriesgar te suma o te resta.</p>
 </section>
 
 <section aria-labelledby="h-cta">
@@ -1036,7 +1037,7 @@ FECHA_FAQS = [
      'Ambos están previstos para el sábado 17 de octubre de 2026 a las 16:00.'),
     ('¿Cuántas plazas se convocan?',
      'Según el Anexo II del BOC n.º 57/2026: 296 plazas de Auxiliar (C2) por turno libre (278 de turno general y 18 de '
-     'discapacidad) y 57 de Administrativo (C1) por turno libre (46 y 11). Las bases prevén además plazas adicionales.'),
+     'discapacidad) y 57 de Administrativo (C1) por turno libre (46 y 11). El Anexo II recoge además plazas adicionales.'),
     ('¿Cuánto dura el examen?',
      '100 minutos para las dos partes (test de 50 preguntas y supuesto práctico de 25), repartidos como quieras. '
      'Si conservas la calificación del primer ejercicio, la segunda parte dura como máximo 50 minutos (Base 21.3).'),
@@ -1073,14 +1074,14 @@ def page_fecha():
 <section class="card sec" aria-labelledby="h-cal">
 <h2 id="h-cal">Calendario del ejercicio único 2026</h2>
 <div class="tw"><table class="t"><thead><tr><th scope="col">Proceso</th><th scope="col">Fecha</th><th class="n" scope="col">Hora</th><th class="n" scope="col">Plazas</th></tr></thead><tbody>{rows}</tbody></table></div>
-<p>Horas de Canarias. Las fechas son una <strong>previsión</strong>: la propia nota dice que tiene carácter orientativo y que son oficiales la fecha, la hora y las sedes que se publiquen en el Boletín Oficial de Canarias. Como lugares, la nota cita la Universidad de La Laguna y la Universidad de Las Palmas de Gran Canaria.</p>
+<p>Horas de convocatoria, en hora de Canarias. Las fechas son una <strong>previsión</strong>: la propia nota dice que tiene carácter orientativo y que son oficiales la fecha, la hora y las sedes que se publiquen en el Boletín Oficial de Canarias. Como lugares, la nota cita la Universidad de La Laguna y la Universidad de Las Palmas de Gran Canaria.</p>
 <p class="srcline">Fuentes: <a href="{NOTA_URL}" target="_blank" rel="noopener">nota informativa DGFP de 09/09/2026 (PDF)</a> · <a href="{BOC_URL}" target="_blank" rel="noopener">BOC n.º 57/2026, Anexo II (plazas)</a></p>
 </section>
 
 <section class="card sec" aria-labelledby="h-plazas">
 <h2 id="h-plazas">Plazas convocadas por turno libre</h2>
 <div class="kpis"><div class="kpi"><b>296</b><span>C2 Auxiliar (278 generales + 18 discapacidad)</span></div><div class="kpi"><b>57</b><span>C1 Administrativo (46 generales + 11 discapacidad)</span></div></div>
-<p>Datos del Anexo II del BOC n.º 57/2026. Las bases prevén además la adición de plazas adicionales (base quinta).</p>
+<p>Datos del Anexo II del BOC n.º 57/2026. La convocatoria prevé además plazas adicionales (consideración jurídica quinta y Anexo II), para vacantes que surjan en los dos años siguientes.</p>
 </section>
 
 <section class="card sec" aria-labelledby="h-como">
@@ -1100,7 +1101,7 @@ def page_fecha():
 <li><strong>Hoy:</strong> haz un examen oficial completo con cronómetro para saber de dónde partes. El C2 de 2022 es gratis en el simulador.</li>
 <li><strong>Mide dónde pierdes nota:</strong> aciertos, fallos y blancos en cada parte. Con la calculadora ves cuántos aciertos te faltan para el 5.</li>
 <li><strong>Decide tu estrategia de blancos</strong> antes del examen, no durante: en el test compensa contestar si descartas una opción; en el supuesto, solo si dudas entre 2.</li>
-<li><strong>Repite lo que fallas</strong> hasta que salga solo y haz al menos un simulacro completo de 100 minutos la semana del examen.</li>
+<li><strong>Repite lo que fallas</strong> hasta que salga solo y haz al menos un simulacro completo con cronómetro la semana del examen.</li>
 </ol>
 </section>
 
@@ -1150,7 +1151,7 @@ def page_hub(exams):
             f'<p class="srcline">Pregunta {q["n"]} del cuestionario n.º 2 de Auxiliar (C2) turno libre, convocatoria 2022 · '
             f'<a href="{exam_page}#p{q["n"]}">verla en el examen completo</a></p></details></div>')
     body = hero(
-        'Preguntas oficiales · C2 Auxiliar · Ejercicio único 2026',
+        'Preguntas oficiales de 2022 · C2 Auxiliar · Para el ejercicio único 2026',
         esc(h1),
         ('Preguntas oficiales de exámenes del Gobierno de Canarias, con la respuesta del tribunal y corregidas con las reglas '
          'del ejercicio único de 2026. Empieza por las 10 de muestra o ve directo al examen completo.'),
@@ -1173,7 +1174,7 @@ def page_hub(exams):
 <h3>Pase hasta el examen · {PRICE}</h3>
 <ul class="check lock">
 <li>{TOTAL_QUESTIONS} preguntas oficiales de 6 exámenes (C1 y C2)</li>
-<li>Simulacro completo: test + 1 de 2 supuestos oficiales, 100 minutos</li>
+<li>Simulacro completo cronometrado: test + 1 de 2 supuestos oficiales</li>
 <li>Tests aleatorios con todo el banco oficial</li>
 <li>Repaso de falladas e historial de notas</li>
 </ul>

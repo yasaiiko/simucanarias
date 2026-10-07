@@ -12,6 +12,7 @@ header.site nav.top .btn.small { white-space: nowrap; }
 .sec h3 { margin-top: 18px; }
 .sec ul, .sec ol { padding-left: 22px; margin: 0 0 12px; }
 .sec li { margin: 6px 0; }
+.sec ul.check { padding-left: 0; }
 
 /* breadcrumb */
 .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 2px 8px; padding: 0; margin: 4px 0 6px; font-size: .86rem; color: var(--muted); }

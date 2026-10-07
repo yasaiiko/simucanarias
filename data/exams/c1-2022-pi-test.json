@@ -722,8 +722,8 @@
      },
      "answer": "d",
      "reserve": true,
-     "annulled": false,
-     "note": "La plantilla oficial marca d) (\"compulsión indirecta\"); el texto literal del art. 104.1 de la Ley 39/2015 dice \"compulsión directa\" (opción c)."
+     "annulled": true,
+     "note": "Excluida de la puntuación: la plantilla oficial marca d) (\"compulsión indirecta\"), pero el texto literal del art. 104.1 de la Ley 39/2015 dice \"compulsión directa\" (opción c). Era una pregunta de reserva."
     },
     {
      "n": 52,

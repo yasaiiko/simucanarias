@@ -70,9 +70,14 @@
     return EXAMS[id];
   }
   function blockQs(ex, bi) {
-    return ex.blocks[bi].questions.map(q => ({ ...q, uid: `${ex.id}#${bi}#${q.n}`, src: ex.title, srcUrl: ex.source_url, srcDate: ex.published }));
+    const b = ex.blocks[bi];
+    const ctx = b.kind === 'practico' && b.context ? { title: b.title, context: b.context } : null;
+    return b.questions.map(q => ({ ...q, uid: `${ex.id}#${bi}#${q.n}`, src: ex.title, srcUrl: ex.source_url, srcDate: ex.published, ctx }));
   }
   const isFree = (id) => id === C.freeExam;
+  const renumber = (qs) => qs.map((q, i) => ({ ...q, dn: i + 1 }));
+  const qLabel = (q, qs) => q.reserve ? 'Reserva ' + (qs.filter(x => x.reserve).indexOf(q) + 1) : (q.dn || q.n) + '.';
+  const ctxBox = (q, p) => (!p || !p.choices) && q.ctx ? `<details class="context" style="margin:0 0 10px"><summary class="small"><strong>Ver enunciado: ${esc(q.ctx.title)}</strong></summary>\n${esc(q.ctx.context)}</details>` : '';
   const locked = (id) => !PRO && !isFree(id);
 
   // ---------------- Session ----------------
@@ -125,7 +130,7 @@
     if (SES.done) return;
     if (!auto) {
       const total = SES.parts.reduce((s, p, i) => s + scoredSet(partQs(p, i)).length, 0);
-      const answered = Object.keys(SES.answers).length;
+      const answered = SES.parts.reduce((s, p, i) => s + scoredSet(partQs(p, i)).filter(q => SES.answers[q.uid]).length, 0);
       if (!confirm(`¿Entregar el examen? Has respondido ${answered} de ${total} preguntas.`)) return;
     }
     clearInterval(TICK);
@@ -176,17 +181,19 @@
   async function buildSimulacro(group, onlyPart2) {
     const choices = await supuestoChoices(group);
     const part2 = { kind: 'practico', title: 'Parte 2 · Supuesto práctico', choices: choices.slice(0, 2), note: 'Elige 1 de los 2 supuestos, como en el examen real.' };
-    if (onlyPart2) return { title: `Parte 2 (${group}) · 50 minutos`, minutes: 50, parts: [part2] };
+    if (onlyPart2) { const m = Math.max(10, Math.round(50 * scoredSet(part2.choices[0].questions).length / 25)); return { title: `Parte 2 (${group}) · ${m} minutos`, minutes: m, parts: [part2] }; }
     let q1;
     if (group === 'C2') {
       q1 = blockQs(await getExam('c2-2022-libre-test2'), 0);
     } else {
       const a = blockQs(await getExam('c1-2024-pi-teorico'), 0).filter(q => !q.reserve);
       const b = shuffle(blockQs(await getExam('c1-2022-pi-test'), 0).filter(q => !q.reserve && !q.annulled));
-      q1 = a.concat(b.slice(0, Math.max(0, 50 - a.length)));
+      q1 = renumber(a.concat(b.slice(0, Math.max(0, 50 - a.length))));
     }
+    const n1 = scoredSet(q1).length, n2 = scoredSet(part2.choices[0].questions).length;
+    const minutes = Math.round(100 * (n1 + n2) / 75);
     return {
-      title: `Simulacro completo ${group} · 100 minutos`, minutes: 100,
+      title: `Simulacro completo ${group} · ${minutes} minutos`, minutes,
       parts: [{ kind: 'general', title: 'Parte 1 · Test', questions: q1 }, part2],
     };
   }
@@ -201,7 +208,7 @@
     return pool;
   }
   async function buildRandom(group, count) {
-    const pool = shuffle(await generalPool(group)).slice(0, count).map(q => ({ ...q, reserve: false }));
+    const pool = renumber(shuffle(await generalPool(group)).slice(0, count).map(q => ({ ...q, reserve: false })));
     return { title: `Test aleatorio · ${group === 'all' ? 'C1 + C2' : group} · ${pool.length} preguntas`, minutes: Math.max(5, pool.length), parts: [{ kind: 'general', title: 'Test aleatorio', questions: pool }] };
   }
   async function falladasQs() {
@@ -213,7 +220,7 @@
       try {
         const ex = await getExam(id);
         const q = blockQs(ex, +bi).find(x => String(x.n) === n);
-        if (q) out.push({ ...q, reserve: false });
+        if (q && !q.annulled) out.push({ ...q, reserve: false });
       } catch {}
     }
     return out;
@@ -233,7 +240,7 @@
     const examRow = (e) => `
       <div class="list-item">
         <div><div><strong>${lockIco(e.id)}${esc(e.title)}</strong></div>
-        <div class="small muted">${e.blocks.map(b => `${esc(b.title)}: ${b.count} preguntas${b.reserves ? ` + ${b.reserves} reserva` : ''}`).join(' · ')} · Publicado ${esc(e.published)}</div></div>
+        <div class="small muted">${e.blocks.map(b => `${esc(b.title)}: ${plural(b.count, 'pregunta')}${b.reserves ? ` + ${plural(b.reserves, 'reserva')}` : ''}`).join(' · ')} · Publicado ${esc(e.published)}</div></div>
         <a class="btn small ${locked(e.id) ? 'ghost' : ''}" href="#/exam/${e.id}">${isFree(e.id) ? 'Gratis' : locked(e.id) ? 'Ver' : 'Empezar'}</a>
       </div>`;
     const proBtn = (href, label) => PRO ? `<a class="btn small" href="${href}">${label}</a>` : `<button class="btn small ghost" data-buy>🔒 ${label}</button>`;
@@ -248,9 +255,9 @@
 
         <h2 style="margin-top:28px">Simulacros como el día del examen</h2>
         <div class="grid2">
-          <div class="card"><h3>C2 Auxiliar · completo</h3><p class="small muted">100 min · Parte 1: test oficial C2 (50 + reserva) · Parte 2: elige 1 de 2 supuestos oficiales.</p>${proBtn('#/sim/C2', 'Empezar simulacro C2')}</div>
-          <div class="card"><h3>C1 Administrativo · completo</h3><p class="small muted">100 min · Parte 1: 50 preguntas oficiales C1 · Parte 2: elige entre el supuesto A y el B oficiales.</p>${proBtn('#/sim/C1', 'Empezar simulacro C1')}</div>
-          <div class="card"><h3>Solo parte 2 · 50 min</h3><p class="small muted">Para quien conserva la nota de la primera parte.</p><div class="cta-row" style="margin:6px 0 0">${proBtn('#/p2/C2', 'C2')} ${proBtn('#/p2/C1', 'C1')}</div></div>
+          <div class="card"><h3>C2 Auxiliar · completo</h3><p class="small muted">80 min · Parte 1: test oficial C2 (50 + 4 reservas) · Parte 2: elige 1 de 2 supuestos oficiales C2 de 2022 (10 preguntas cada uno; tiempo y nota proporcionales).</p>${proBtn('#/sim/C2', 'Empezar simulacro C2')}</div>
+          <div class="card"><h3>C1 Administrativo · completo</h3><p class="small muted">100 min · Parte 1: 50 preguntas oficiales C1 · Parte 2: elige entre el supuesto A y el B oficiales (25 preguntas + 3 reservas).</p>${proBtn('#/sim/C1', 'Empezar simulacro C1')}</div>
+          <div class="card"><h3>Solo parte 2</h3><p class="small muted">Para quien conserva la nota de la primera parte: 50 min en C1 (25 preguntas) y 20 min en C2 (10 preguntas).</p><div class="cta-row" style="margin:6px 0 0">${proBtn('#/p2/C2', 'C2')} ${proBtn('#/p2/C1', 'C1')}</div></div>
           <div class="card"><h3>Test aleatorio</h3><p class="small muted">Preguntas mezcladas de todo el banco oficial (test general).</p>
             <div class="cta-row" style="margin:6px 0 0">${proBtn('#/random/all/25', '25 preguntas')} ${proBtn('#/random/all/50', '50 preguntas')}</div></div>
         </div>
@@ -263,8 +270,11 @@
           <div class="card"><h3>Repasar falladas</h3><p class="small muted">${plural(fall, 'pregunta pendiente', 'preguntas pendientes')} de repasar.</p>${fall ? proBtn('#/falladas', 'Repasar ahora') : '<span class="small muted">Haz un examen primero.</span>'}</div>
           <div class="card"><h3>Historial</h3>${hist.length ? `<ul class="small" style="padding-left:18px;margin:0">${hist.slice(0, 6).map(h => `<li>${new Date(h.t).toLocaleDateString('es-ES')} · ${esc(h.title)} · <strong>${h.mean != null ? 'media ' + S.fmt(h.mean) : h.marks.map(m => S.fmt(m)).join(' / ')}</strong></li>`).join('')}</ul>` : '<p class="small muted">Aún no has hecho ningún examen.</p>'}</div>
         </div>
+        ${PRO ? '<p class="small muted" style="margin-top:24px"><a href="#" id="lic-off">Quitar el pase de este dispositivo</a> (podrás volver a activarlo con tu clave).</p>' : ''}
         <p class="small muted" style="margin-top:24px">Preguntas y respuestas tomadas de los exámenes oficiales publicados por la DGFP del Gobierno de Canarias. Si la normativa ha cambiado después del examen, la respuesta oficial puede no coincidir con la ley vigente. ¿Ves un error? Si eres cliente, responde al email de compra de Gumroad y lo corregimos.</p>
       </div>`);
+    const lo = $('#lic-off');
+    if (lo) lo.onclick = (e) => { e.preventDefault(); if (confirm('¿Quitar el pase de este dispositivo?')) { lic.deactivate(); home(); } };
     const d = $('#discard');
     if (d) d.onclick = (e) => { e.preventDefault(); LS.del(SKEY); home(); };
   }
@@ -276,7 +286,7 @@
       <a href="#/">← Volver</a>
       <h1>🔒 ${esc(e ? e.title : id)}</h1>
       <p class="muted">${e ? e.blocks.map(b => `${esc(b.title)}: ${b.count} preguntas oficiales${b.reserves ? ` + ${b.reserves} de reserva` : ''}`).join(' · ') : ''}</p>
-      <div class="card"><p>Este examen forma parte del <strong>Pase hasta el examen</strong> (${esc(C.price)}, pago único). Incluye todos los exámenes oficiales, los simulacros completos de 100 minutos, tests aleatorios y repaso de falladas.</p>
+      <div class="card"><p>Este examen forma parte del <strong>Pase hasta el examen</strong> (${esc(C.price)}, pago único). Incluye todos los exámenes oficiales, los simulacros completos cronometrados, tests aleatorios y repaso de falladas.</p>
       <div class="cta-row"><button class="btn sun" data-buy>Desbloquear por ${esc(C.price)}</button><a class="btn ghost" href="#/exam/${C.freeExam}">Probar antes el examen gratis</a></div></div>
       ${e ? `<p class="small muted">Fuente: <a href="${esc(e.source_url)}" target="_blank" rel="noopener">PDF oficial</a> (publicado ${esc(e.published)}).</p>` : ''}
     </div>`);
@@ -343,10 +353,10 @@
           </div>`).join('')}</div>`;
       if (ch != null) choiceHtml += `<details open class="context" style="margin-bottom:12px"><summary><strong>Enunciado del supuesto</strong></summary>\n${esc(p.choices[ch].context)}</details>`;
     }
-    const nav = qs.length ? `<details class="navwrap" ${innerWidth > 700 ? 'open' : ''}><summary class="small">Ir a una pregunta</summary><div class="navgrid">${qs.map((q, i) => `<a href="#q-${i}" data-jump="${i}" class="${SES.answers[q.uid] ? 'done' : ''} ${SES.doubts[q.uid] ? 'dq' : ''}" title="${q.reserve ? 'Reserva' : ''}">${q.reserve ? 'R' : ''}${q.reserve ? qs.filter(x => x.reserve).indexOf(q) + 1 : q.n}</a>`).join('')}</div></details>` : '';
+    const nav = qs.length ? `<details class="navwrap" ${innerWidth > 700 ? 'open' : ''}><summary class="small">Ir a una pregunta</summary><div class="navgrid">${qs.map((q, i) => `<a href="#q-${i}" data-jump="${i}" class="${SES.answers[q.uid] ? 'done' : ''} ${SES.doubts[q.uid] ? 'dq' : ''}" title="${q.reserve ? 'Reserva' : ''}">${q.reserve ? 'R' + (qs.filter(x => x.reserve).indexOf(q) + 1) : (q.dn || q.n)}</a>`).join('')}</div></details>` : '';
     const qHtml = qs.map((q, i) => `
       <div class="q" id="q-${i}">
-        <div class="qhead"><p class="stem"><span class="num">${q.reserve ? 'Reserva ' + (qs.filter(x => x.reserve).indexOf(q) + 1) : q.n + '.'}</span>${esc(q.stem)}</p>
+        ${ctxBox(q, p)}<div class="qhead"><p class="stem"><span class="num">${qLabel(q, qs)}</span>${esc(q.stem)}</p>
           <button class="doubt ${SES.doubts[q.uid] ? 'on' : ''}" data-doubt="${esc(q.uid)}" title="Marca si dudas: al corregir verás si te compensó arriesgar">${SES.doubts[q.uid] ? '✋ Dudosa' : '✋ Dudo'}</button></div>
         ${Object.entries(q.options).map(([l, t]) => `<button class="opt ${SES.answers[q.uid] === l ? 'sel' : ''}" data-q="${esc(q.uid)}" data-l="${l}"><span class="l">${l})</span><span>${esc(t)}</span></button>`).join('')}
       </div>`).join('');
@@ -439,22 +449,22 @@
       const qs = partQs(p, pi);
       const pr = R.parts[pi];
       if (p.choices && SES.chosen[pi] != null) items.push({ ctx: p.choices[SES.chosen[pi]] });
-      qs.forEach(q => items.push({ q, st: pr.per[q.uid] || (q.reserve ? 'reserve' : 'blank'), pi }));
+      qs.forEach(q => items.push({ q, qs, p, st: pr.per[q.uid] || (q.reserve || q.annulled ? 'reserve' : 'blank'), pi }));
     });
     const show = (it) => filter === 'all' || (filter === 'ko' && it.st === 'ko') || (filter === 'blank' && it.st === 'blank') || (filter === 'doubt' && SES.doubts[it.q.uid]);
     const review = items.map(it => {
       if (it.ctx) return filter === 'all' ? `<details class="context" style="margin:12px 0"><summary><strong>Enunciado: ${esc(it.ctx.title)}</strong></summary>\n${esc(it.ctx.context)}</details>` : '';
       if (!show(it)) return '';
       const q = it.q, a = SES.answers[q.uid];
-      const badge = it.st === 'ok' ? '<span class="tag ok">Acierto</span>' : it.st === 'ko' ? '<span class="tag bad">Fallo</span>' : it.st === 'reserve' ? '<span class="tag">Reserva (no puntúa)</span>' : '<span class="tag">En blanco</span>';
+      const badge = it.st === 'ok' ? '<span class="tag ok">Acierto</span>' : it.st === 'ko' ? '<span class="tag bad">Fallo</span>' : it.st === 'reserve' ? `<span class="tag">${q.annulled ? 'Excluida (no puntúa)' : 'Reserva (no puntúa)'}</span>` : '<span class="tag">En blanco</span>';
       return `<div class="q">
-        <div class="qhead"><p class="stem"><span class="num">${q.reserve ? 'Reserva' : q.n + '.'}</span>${esc(q.stem)}</p><div>${badge} ${SES.doubts[q.uid] ? '<span class="tag warn">Dudosa</span>' : ''}</div></div>
+        ${ctxBox(q, it.p)}<div class="qhead"><p class="stem"><span class="num">${qLabel(q, it.qs)}</span>${esc(q.stem)}</p><div>${badge} ${SES.doubts[q.uid] ? '<span class="tag warn">Dudosa</span>' : ''}</div></div>
         ${Object.entries(q.options).map(([l, t]) => `<button disabled class="opt ${l === q.answer ? 'right' : ''} ${a === l && l !== q.answer ? 'wrong' : ''}"><span class="l">${l})</span><span>${esc(t)}${l === q.answer ? ' ✓' : ''}${a === l && l !== q.answer ? ' ✗ (tu respuesta)' : ''}</span></button>`).join('')}
         ${q.note ? `<p class="small notice">${esc(q.note)}</p>` : ''}
-        <p class="src">Fuente: <a href="${esc(q.srcUrl)}" target="_blank" rel="noopener">${esc(q.src)}</a> · respuesta según la plantilla oficial publicada ${esc(q.srcDate)}</p>
+        <p class="src">Pregunta ${q.reserve ? 'de reserva ' : ''}${q.n} · <a href="${esc(q.srcUrl)}" target="_blank" rel="noopener">${esc(q.src)}</a> · respuesta según la plantilla oficial publicada ${esc(q.srcDate)}</p>
       </div>`;
     }).join('');
-    const upsell = PRO ? '' : `<div class="card" style="border-color:var(--sun);margin:18px 0"><h3>¿Te ha servido?</h3><p class="small">Con el <strong>Pase hasta el examen</strong> (${esc(C.price)}, pago único) haces el simulacro completo de 100 minutos (test + 1 de 2 supuestos oficiales), todos los exámenes oficiales C1 y C2, tests aleatorios y repaso de falladas.</p><button class="btn sun" data-buy>Desbloquear por ${esc(C.price)}</button></div>`;
+    const upsell = PRO ? '' : `<div class="card" style="border-color:var(--sun);margin:18px 0"><h3>¿Te ha servido?</h3><p class="small">Con el <strong>Pase hasta el examen</strong> (${esc(C.price)}, pago único) haces el simulacro completo cronometrado (test + 1 de 2 supuestos oficiales), todos los exámenes oficiales C1 y C2, tests aleatorios y repaso de falladas.</p><button class="btn sun" data-buy>Desbloquear por ${esc(C.price)}</button></div>`;
     view(`<div class="wrap" style="padding-top:24px;padding-bottom:50px">
       <a href="#/">← Volver al simulador</a>
       <h1 style="margin-top:10px">Resultado</h1>
@@ -487,7 +497,7 @@
       if (r === 'falladas') return guardPro(async () => {
         const qs = await falladasQs();
         if (!qs.length) { location.hash = '#/'; return; }
-        newSession({ title: `Repaso de falladas · ${qs.length} preguntas`, minutes: Math.max(5, qs.length), practice: true, parts: [{ kind: 'general', title: 'Repaso', questions: qs }] });
+        newSession({ title: `Repaso de falladas · ${plural(qs.length, 'pregunta')}`, minutes: Math.max(5, qs.length), practice: true, parts: [{ kind: 'general', title: 'Repaso', questions: renumber(qs) }] });
       });
       return home();
     } catch (err) {

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador · SimuCanarias</title>
+<meta name="description" content="Simulador del ejercicio único del Gobierno de Canarias con exámenes oficiales y las reglas de corrección de 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a5cc2'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site" id="site-header">
+  <div class="wrap">
+    <a class="logo" href="./"><span class="logo-mark">S</span>SimuCanarias</a>
+    <nav class="top">
+      <a href="#/" class="hide-sm">Inicio del simulador</a>
+      <span id="pro-badge"></span>
+    </nav>
+  </div>
+</header>
+
+<div id="app"><div class="wrap" style="padding:40px 16px"><p class="muted">Cargando…</p></div></div>
+
+<div class="modal-bg" id="buy-modal" role="dialog" aria-modal="true" aria-labelledby="buy-title">
+  <div class="modal">
+    <h2 id="buy-title">Pase hasta el examen</h2>
+    <p class="muted">Todos los exámenes oficiales, simulacros completos de 100 minutos, tests aleatorios, repaso de falladas y estrategia de blancos. C1 y C2.</p>
+    <p class="price"><span class="js-price"></span> <small>pago único · reembolso 14 días</small></p>
+    <a class="btn sun js-buy" href="#" target="_blank" rel="noopener" style="width:100%">Comprar con Gumroad</a>
+    <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+    <label for="lic-input"><strong>¿Ya lo has comprado?</strong> Pega la clave de licencia que te llegó por email:</label>
+    <input id="lic-input" placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX" autocomplete="off" spellcheck="false">
+    <button class="btn" id="lic-go" style="width:100%">Activar</button>
+    <p id="lic-msg" class="small" style="min-height:1.4em;margin:8px 0 0"></p>
+    <p style="text-align:right;margin:8px 0 0"><button class="btn ghost small" id="buy-close">Cerrar</button></p>
+  </div>
+</div>
+
+<script src="assets/config.js"></script>
+<script src="assets/scoring.js"></script>
+<script src="assets/license.js"></script>
+<script src="assets/sim.js"></script>
+</body>
+</html>

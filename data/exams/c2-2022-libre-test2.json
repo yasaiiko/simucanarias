@@ -1,0 +1,773 @@
+{
+ "id": "c2-2022-libre-test2",
+ "title": "C2 Auxiliar · Turno libre · Convocatoria BOC 245/2022 · Primer ejercicio (cuestionario n.º 2)",
+ "group": "C2",
+ "kind": "general",
+ "source_url": "https://www.gobiernodecanarias.org/cpj/dgfp/procesos_selectivos/procesos_2022/auxi_libres/relacion_preguntas_respuestas_cuestionario_2_C2_LIBRES_11032024.pdf",
+ "published": "11/03/2024",
+ "blocks": [
+  {
+   "kind": "general",
+   "title": "Cuestionario",
+   "context": "",
+   "questions": [
+    {
+     "n": 1,
+     "stem": "De conformidad con el artículo 1 de la Constitución Española de 1978, los valores superiores del ordenamiento jurídico español son:",
+     "options": {
+      "a": "Igualdad, publicidad y concurrencia.",
+      "b": "Pluralismo político, voluntad popular y participación política.",
+      "c": "Jerarquía normativa, publicidad de las normas y retroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales.",
+      "d": "Libertad, justicia, igualdad y pluralismo político."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 2,
+     "stem": "El artículo 148 de la Constitución Española de 1978 señala que las Comunidades Autónomas podrán asumir competencias en materia de:",
+     "options": {
+      "a": "Ordenación del territorio, urbanismo y vivienda.",
+      "b": "Legislación sobre propiedad intelectual e industrial.",
+      "c": "Servicio meteorológico.",
+      "d": "Legislación sobre productos farmacéuticos."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 3,
+     "stem": "Según el artículo 95 del Estatuto de Autonomía de Canarias, la Comunidad Autónoma de Canarias ejercerá las competencias exclusivas mediante:",
+     "options": {
+      "a": "La función ejecutiva.",
+      "b": "La potestad legislativa.",
+      "c": "La potestad legislativa y la potestad reglamentaria.",
+      "d": "La potestad legislativa, la potestad reglamentaria y la función ejecutiva, sin perjuicio de la concurrencia de otros títulos competenciales del Estado"
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 4,
+     "stem": "Según el artículo 48 del Estatuto de Autonomía de Canarias, el Parlamento de Canarias elegirá:",
+     "options": {
+      "a": "A la persona titular de la Presidencia de Canarias, que únicamente debe tener la condición política de canario.",
+      "b": "Entre sus miembros, a la persona titular de la Presidencia de Canarias.",
+      "c": "Entre sus miembros, a las personas titulares de la Presidencia de Canarias y de la Vicepresidencia de Canarias.",
+      "d": "A la persona titular de la Presidencia de Canarias, que debe tener la condición de diputado de las Cortes o Senador."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 5,
+     "stem": "Según el Decreto 41/2023, de 14 de julio, por el que se determinan las competencias de la Presidencia y Vicepresidencia, así como el número, denominación, competencias y orden de precedencias de las Consejerías, las competencias relativas a las telecomunicaciones y las tecnologías de la información corresponden actualmente a la:",
+     "options": {
+      "a": "Presidencia del Gobierno.",
+      "b": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad.",
+      "c": "Consejería de Hacienda, Presupuestos y Asuntos Europeos.",
+      "d": "Agencia Tributaria Canaria."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 6,
+     "stem": "La Ley 7/2015, de 1 de abril, de municipios de Canarias, en su artículo 4, señala que es una expresión de la autonomía municipal:",
+     "options": {
+      "a": "La organización de sus estructuras administrativas internas para adaptarse a sus necesidades específicas y permitir una gestión eficaz y eficiente.",
+      "b": "La organización de las estructuras administrativas de su Cabildo para obtener una gestión eficaz y eficiente de su isla.",
+      "c": "La posibilidad de mancomunarse con su cabildo para la prestación conjunta de servicios o funciones administrativas.",
+      "d": "La atribución a los ayuntamientos y cabildos de las competencias para que desarrollen servicios y funciones que resuelvan intereses esenciales para la comunidad vecinal."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 7,
+     "stem": "De conformidad con el artículo 68 de la Ley 11/2006, de 11 de diciembre, de la Hacienda Pública Canaria, las fases de la gestión del presupuesto de gastos en los entes del sector público con presupuesto limitativo son:",
+     "options": {
+      "a": "Retención del crédito, compromiso de gasto, reconocimiento de la obligación, ordenación del pago y pago material.",
+      "b": "Retención del crédito, reconocimiento de la obligación y ordenación del pago.",
+      "c": "Aprobación del gasto, compromiso de gasto, reconocimiento de la obligación, ordenación del pago y pago material.",
+      "d": "Retención del crédito, reconocimiento de la obligación y pago material."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 8,
+     "stem": "La institución europea llamada Comisión Europea está compuesta por:",
+     "options": {
+      "a": "El Colegio de Comisarios, con veintisiete miembros.",
+      "b": "Veintisiete abogados generales, uno por cada país.",
+      "c": "Los embajadores plenipotenciarios de los veintisiete Estados miembros y el presidente del Consejo.",
+      "d": "Los jefes de Estado o de Gobierno de los veintisiete Estados miembros y el presidente del Consejo."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 9,
+     "stem": "De conformidad con el artículo 12 de la Ley 1/2010, de 26 de febrero, canaria de igualdad entre mujeres y hombres, en el nombramiento de titulares de órganos directivos de la Administración de la Comunidad Autónoma de Canarias cuya designación corresponda al Gobierno de Canarias:",
+     "options": {
+      "a": "Se atenderá a la representación equilibrada de hombres y mujeres.",
+      "b": "Se exigirá la representación equilibrada de hombres y mujeres.",
+      "c": "Se exigirá un sistema de paridad que consiga la representación equilibrada entre mujeres y hombres desde el año 2025 en adelante.",
+      "d": "Se exigirá un sistema de paridad que consiga la representación equilibrada entre mujeres y hombres desde el año 2030 en adelante."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 10,
+     "stem": "De conformidad con el artículo 4 de la Ley General de derechos de las personas con discapacidad y de su inclusión social, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 1/2013, de 29 de noviembre, son personas con discapacidad aquellas que presentan deficiencias físicas, mentales, intelectuales o sensoriales, que:",
+     "options": {
+      "a": "Les impiden tener plenitud de sus derechos civiles.",
+      "b": "Al interactuar con diversas barreras, puedan impedir su participación plena y efectiva en la sociedad, en igualdad de condiciones con los demás.",
+      "c": "Al interactuar con diversas barreras, no tienen acceso al empleo público.",
+      "d": "Necesitan adaptaciones exclusivamente del ambiente físico para la participación en condiciones de vida en igualdad."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 11,
+     "stem": "De conformidad con el artículo 13 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la persona, en su relación con las Administraciones Públicas, tiene derecho a:",
+     "options": {
+      "a": "A exigir las responsabilidades administrativas de las autoridades de las Administraciones Públicas, cuando así lo disponga el Código Penal.",
+      "b": "A utilizar cualquier lengua oficial del territorio estatal, aunque no sea propia del territorio de su Comunidad Autónoma.",
+      "c": "A presentarse personalmente en las oficinas del personal al servicio de las Administraciones Públicas bajo cuya responsabilidad se tramiten los procedimientos administrativos durante el horario de oficina.",
+      "d": "A exigir las responsabilidades de las Administraciones Públicas y autoridades, cuando así corresponda legalmente."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 12,
+     "stem": "Según el artículo 8 del Decreto 44/2007, de 27 de febrero, por el que se regula el servicio de información y atención ciudadana en la Administración Pública de la Comunidad Autónoma de Canarias, la información telefónica se presta a través:",
+     "options": {
+      "a": "Del portal web del Gobierno de Canarias.",
+      "b": "Del servicio de atención telefónica 012.",
+      "c": "De las oficinas de información y atención ciudadana presencial (OIAC).",
+      "d": "De la Secretaría General Técnica de cada consejería, previo pago de la tasa correspondiente."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 13,
+     "stem": "De conformidad con el artículo 5 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la actuación de un interesado mediante representación requiere:",
+     "options": {
+      "a": "Que el representante sea un profesional para el que se requiera colegiación obligatoria.",
+      "b": "Que la representación siempre se efectué por medio de personas jurídicas, independientemente de su contenido estatutario.",
+      "c": "Que la representación sea conferida mediante apoderamiento apud acta efectuado exclusivamente por comparecencia personal ante un funcionario público que compruebe la identidad del representado.",
+      "d": "Que la representación se acredite mediante cualquier medio válido en Derecho que deje constancia fidedigna de su existencia, incluida la comparecencia electrónica en la sede electrónica."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 14,
+     "stem": "De conformidad con el artículo 96 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la tramitación simplificada:",
+     "options": {
+      "a": "Es una novedad de la Ley 30/1992.",
+      "b": "Podrá solicitarse por los interesados.",
+      "c": "Solo se puede acordar de oficio.",
+      "d": "Impide continuar posteriormente con arreglo a la tramitación ordinaria."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 15,
+     "stem": "De conformidad con el artículo 32 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, en los procedimientos administrativos de responsabilidad patrimonial, el daño alegado habrá de ser:",
+     "options": {
+      "a": "Individualizado con relación a una persona o grupo de personas.",
+      "b": "Efectivo o potencial.",
+      "c": "Derivado exclusivamente del funcionamiento anormal de los servicios públicos.",
+      "d": "Derivado de una fuerza mayor."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 16,
+     "stem": "De conformidad con el artículo 107 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la declaración de lesividad de un acto de la Administración Pública:",
+     "options": {
+      "a": "Siempre supone la revisión de un acto nulo.",
+      "b": "Requiere que no haya transcurrido el plazo de cinco años desde que se dictó el acto.",
+      "c": "Se declara mediante un procedimiento que tiene un plazo de caducidad de doce meses.",
+      "d": "Exige la previa audiencia de los interesados en el acto."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 17,
+     "stem": "Conforme al artículo 113 de la Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas, el recurso extraordinario de revisión puede interponerse:",
+     "options": {
+      "a": "Contra cualquier acto por cualquier motivo de nulidad o anulabilidad, aunque no haya finalizado la vía administrativa, dado su carácter extraordinario.",
+      "b": "Contra cualquier acto que finalice la vía administrativa por cualquier motivo de nulidad o anulabilidad, dado su carácter extraordinario.",
+      "c": "Contra cualquier acto firme en la vía administrativa por cualquier motivo de nulidad o anulabilidad, dado su carácter extraordinario.",
+      "d": "Contra un acto firme en la vía administrativa exclusivamente por los motivos previstos en el artículo 125 de dicha ley."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 18,
+     "stem": "De conformidad con el artículo 70 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, un expediente administrativo:",
+     "options": {
+      "a": "Tiene siempre formato electrónico.",
+      "b": "Puede tener tanto formato papel como electrónico.",
+      "c": "Debe incorporar las meras diligencias de ejecución de la resolución.",
+      "d": "Debe tener debidamente firmadas todas sus páginas por funcionario público."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 19,
+     "stem": "De conformidad con el artículo 78 del Estatuto Básico del Empleado Público, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, la libre designación con convocatoria pública:",
+     "options": {
+      "a": "Es el sistema por el que se selecciona al personal eventual.",
+      "b": "Es aplicable al personal funcionario de carrera.",
+      "c": "Es la apreciación sin motivación de la idoneidad de los candidatos en relación con los requisitos exigidos para el desempeño de la plaza.",
+      "d": "Requiere que exista una ley que autorice dicho sistema selectivo."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 20,
+     "stem": "Es un principio de conducta de los empleados públicos, expresamente indicado en el artículo 54 del Estatuto Básico del Empleado Público, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre:",
+     "options": {
+      "a": "Obedecer cualquier instrucción u orden profesional de sus superiores, aunque sea manifiestamente ilegal.",
+      "b": "Rechazar siempre cualquier obsequio, regalo o presente, aunque sean una simple muestra de cortesía sin valor apreciable.",
+      "c": "Poner en conocimiento de los órganos de inspección las instrucciones y órdenes profesionales de los superiores que constituyan una infracción manifiesta del ordenamiento jurídico.",
+      "d": "Observar únicamente las normas sobre seguridad laboral que se estimen más cómodas de entre las previstas en la planificación de riesgos laborales de su centro de trabajo."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 21,
+     "stem": "El artículo 53 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública indica que la reclamación ante el comisionado de transparencia y acceso a la información pública:",
+     "options": {
+      "a": "Se interpondrá verbalmente o por escrito en el plazo de un mes desde la notificación del acto impugnado o desde que se produzcan los efectos del silencio administrativo.",
+      "b": "Debe indicar los motivos por los que se reclama.",
+      "c": "Se interpondrá por escrito en el plazo de dos meses a contar desde la notificación del acto impugnado o desde que se produzcan los efectos del silencio administrativo.",
+      "d": "Se presentará exclusivamente en el registro del comisionado de transparencia y acceso a la información pública."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 22,
+     "stem": "Conforme al artículo 4 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, es un principio de la protección de datos:",
+     "options": {
+      "a": "La exactitud de los datos, en todo caso.",
+      "b": "La posibilidad de exclusión publicitaria.",
+      "c": "La portabilidad de los datos.",
+      "d": "El tratamiento mediante el consentimiento de los menores de edad, si son mayores de ocho años."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 23,
+     "stem": "De conformidad con el artículo 15 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, la contrapartida del contrato de concesión de servicios:",
+     "options": {
+      "a": "Exclusivamente el derecho a percibir el precio del contrato, aunque no haya transferencia de un riesgo operacional.",
+      "b": "Exclusivamente el derecho a explotar los servicios objeto del contrato, aunque no haya transferencia de un riesgo operacional.",
+      "c": "El derecho a explotar los servicios objeto del contrato con transferencia de un riesgo operacional, o también ese derecho acompañado del derecho de percibir un precio.",
+      "d": "Exclusivamente el derecho de explotación de las obras, con transferencia al concesionario de un riesgo operacional."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 24,
+     "stem": "De conformidad con el artículo 2 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, tiene carácter de subvención:",
+     "options": {
+      "a": "La disposición dineraria con contraprestación directa de carácter publicitario por parte del beneficiario.",
+      "b": "La disposición de bienes fungibles sin contraprestación directa por parte del beneficiario.",
+      "c": "La disposición dineraria entre diferentes administraciones para financiar globalmente la actividad de la beneficiaria.",
+      "d": "La disposición dineraria para financiar la ejecución de un proyecto que no comporta contraprestación directa de la beneficiaria."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 25,
+     "stem": "De conformidad con el artículo 41 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, para establecer una actuación administrativa automatizada es necesario:",
+     "options": {
+      "a": "Indicar el órgano que debe ser considerado responsable a efectos de impugnación.",
+      "b": "Disponer de un dispositivo equipado con Inteligencia Artificial.",
+      "c": "Exigir la actuación asistida por un profesional al que se requiera colegiación obligatoria.",
+      "d": "Ser empleado de las Administraciones Públicas, en la forma determinada reglamentariamente."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 26,
+     "stem": "El artículo 2 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública incluye en su ámbito de aplicación a:",
+     "options": {
+      "a": "Las universidades públicas canarias.",
+      "b": "Las universidades privadas canarias.",
+      "c": "Las universidades españolas, en su totalidad.",
+      "d": "Cualquier persona física que preste servicios en una universidad en Canarias."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 27,
+     "stem": "Conforme al artículo 6 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, es un principio informador:",
+     "options": {
+      "a": "El de veracidad relativa, asegurando que procede de documentos respecto de los que se ha verificado su fiabilidad relativa y, en lo posible, la cadena de custodia.",
+      "b": "El de libre acceso a la información pública, que solo puede restringirse en los supuestos previstos legalmente.",
+      "c": "El de accesibilidad, en virtud del cual la información se proporcionará por medios que no requieran el desplazamiento físico del interesado.",
+      "d": "El de gratuidad, sin que puedan exigirse tasas por la expedición de copias o la transposición de la información a formatos diferentes del original."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 28,
+     "stem": "De conformidad con el artículo 5 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, el deber de confidencialidad:",
+     "options": {
+      "a": "Exclusivamente alcanza a los responsables del tratamiento de datos.",
+      "b": "Exclusivamente alcanza a los encargados del tratamiento de datos siempre que sean profesionales colegiados.",
+      "c": "Alcanza desde los responsables y encargados del tratamiento de datos hasta todas las personas que intervengan en cualquier fase de éste.",
+      "d": "Alcanza a todas las personas que intervengan en cualquier fase del tratamiento exclusivamente cuando se busque identificar la ideología, religión y orientación sexual."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 29,
+     "stem": "De conformidad con el artículo 116 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, en el expediente de un contrato, obligatoriamente hay que incorporar o justificar:",
+     "options": {
+      "a": "La necesidad de la Administración y su relación con el objeto del contrato, que deberá ser directa, clara y proporcional.",
+      "b": "El informe de insuficiencia de medios, aunque puede ser sustituido por una certificación de los puestos no dotados en la RPT.",
+      "c": "La decisión de no dividir en lotes el objeto del contrato, siempre que el contrato esté sometido a regulación armonizada.",
+      "d": "Los criterios que se tendrán en consideración para adjudicar el contrato y sus condiciones especiales de ejecución siempre que el contrato esté sometido a regulación armonizada."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 30,
+     "stem": "De conformidad con el artículo 5 del Decreto 36/2009, de 31 de marzo, por el que se establece el régimen general de subvenciones de la Comunidad Autónoma de Canarias, pueden ser entidades colaboradoras:",
+     "options": {
+      "a": "Las empresas públicas de los municipios de gran población.",
+      "b": "La Administración General del Estado y sus organismos públicos.",
+      "c": "Las personas físicas al corriente de sus obligaciones tributarias y con la Seguridad Social.",
+      "d": "Las Federaciones Deportivas Canarias."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 31,
+     "stem": "De conformidad con el artículo 14 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, se podrá establecer la obligación de relacionarse con la Administración a través de medios electrónicos para determinados procedimientos por medio de:",
+     "options": {
+      "a": "Instrucción de servicio, para los empleados de las Administraciones Públicas.",
+      "b": "Orden ministerial, para las personas físicas cuando ejerzan una actividad profesional para la que se requiera colegiación obligatoria.",
+      "c": "Orden ministerial, para ciertos colectivos de personas físicas que, por razón de su capacidad económica, técnica, dedicación profesional u otros motivos, quede acreditado que tienen acceso y disponibilidad de los medios electrónicos necesarios.",
+      "d": "Reglamento, para ciertos colectivos de personas físicas que, por razón de su capacidad económica, técnica, dedicación profesional u otros motivos, quede acreditado que tienen acceso y disponibilidad de los medios electrónicos necesarios."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 32,
+     "stem": "Según el artículo 12 del Estatuto Básico del Empleado Público, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, el personal eventual:",
+     "options": {
+      "a": "Se nombra por el procedimiento de libre designación con convocatoria pública.",
+      "b": "Tiene derecho a computar su antigüedad como eventual en el acceso a la función pública o en la promoción interna.",
+      "c": "Tiene aplicación del régimen general de los funcionarios de carrera, en lo que sea adecuado a la naturaleza de su condición.",
+      "d": "Tiene derecho a que sus condiciones retributivas no se hagan públicas."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 33,
+     "stem": "Según el artículo 22 del Estatuto Básico del Empleado Público, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, las retribuciones de los funcionarios:",
+     "options": {
+      "a": "Se clasifican en básicas y de puesto de trabajo.",
+      "b": "Incorpora los trienios dentro de las retribuciones básicas.",
+      "c": "Incorpora la incompatibilidad exigible para el desempeño de cualquier puesto de trabajo en el sector público dentro de las retribuciones básicas.",
+      "d": "Miden y valoran el logro de resultados mediante las retribuciones básicas."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 34,
+     "stem": "De conformidad con el artículo 68 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, el plazo de subsanación de la solicitud de iniciación del procedimiento será de diez días hábiles, pero si la aportación de documentos presenta dificultades especiales, puede ampliarse hasta un máximo de:",
+     "options": {
+      "a": "Cinco días hábiles en cualquier tipo de procedimientos.",
+      "b": "Cinco días hábiles exclusivamente en los procedimientos selectivos o de concurrencia competitiva.",
+      "c": "Cinco días hábiles en los procedimientos que no sean selectivos o de concurrencia competitiva.",
+      "d": "Diez días hábiles en cualquier tipo de procedimientos."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 35,
+     "stem": "De conformidad con el artículo 56 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las medidas provisionales dictadas antes del inicio del procedimiento:",
+     "options": {
+      "a": "Quedarán sin efecto si no se inicia el procedimiento en un plazo máximo de tres meses.",
+      "b": "Quedarán sin efecto si el acuerdo de iniciación no contiene un pronunciamiento expreso acerca de las mismas.",
+      "c": "Se mantendrán hasta que se inicie el procedimiento, con un plazo máximo de seis meses.",
+      "d": "Se mantendrán durante el procedimiento si el acuerdo de iniciación no contiene un pronunciamiento expreso sobre las mismas."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 36,
+     "stem": "De conformidad con los artículos 47 y 48 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las disposiciones administrativas que vulneren otras disposiciones administrativas de rango superior:",
+     "options": {
+      "a": "Son nulas.",
+      "b": "Son anulables.",
+      "c": "Son nulas o anulables, en función de la gravedad de la desviación de poder.",
+      "d": "Son convalidables."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 37,
+     "stem": "De conformidad con el artículo 35 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la motivación de los actos finalizadores se realizará de conformidad con lo que dispongan las normas que regulen sus convocatorias en los procedimientos selectivos y de concurrencia competitiva:",
+     "options": {
+      "a": "Pero siempre los fundamentos de la resolución finalizadora deben quedar acreditados en el procedimiento.",
+      "b": "Aunque, en cualquiera de ellos, si la resolución finalizadora es favorable para el interesado, no es necesario acreditar sus fundamentos en el procedimiento.",
+      "c": "Aunque, en los de procedimientos de concurrencia competitiva, si la resolución finalizadora es favorable para el interesado, no es necesario acreditar sus fundamentos en el procedimiento.",
+      "d": "Aunque, en los procedimientos selectivos, si la resolución finalizadora es favorable para el interesado, no es necesario acreditar sus fundamentos en el procedimiento."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 38,
+     "stem": "De conformidad con el artículo 117 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, el expediente de contratación se aprueba:",
+     "options": {
+      "a": "Por resolución motivada de la Mesa de contratación, que debe publicarse siempre en el perfil del contratante.",
+      "b": "Por resolución motivada de la Mesa de contratación, que solo debe publicarse en el perfil del contratante si el contrato supera los umbrales para estar sometido a la regulación armonizada.",
+      "c": "Por resolución de la Mesa de contratación, que debe luego fiscalizarse para incorporar la aprobación del gasto.",
+      "d": "Por resolución motivada por el órgano de contratación, que debe publicarse en el perfil del contratante."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 39,
+     "stem": "Según el artículo 79 del Estatuto Básico del Empleado Público, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, el procedimiento normal de provisión de puestos de trabajo es:",
+     "options": {
+      "a": "La oposición libre.",
+      "b": "La oposición libre y el concurso-oposición.",
+      "c": "El concurso.",
+      "d": "La libre designación con convocatoria pública."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 40,
+     "stem": "De conformidad con el artículo 118 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, en el contrato menor de obras, el expediente:",
+     "options": {
+      "a": "Debe incorporar únicamente el presupuesto de las obras.",
+      "b": "Debe incorporar siempre el presupuesto de las obras y el informe de insuficiencia de medios.",
+      "c": "Debe incorporar siempre el presupuesto de las obras y añadir el informe de las oficinas o unidades de supervisión únicamente cuando la obra afecte a su estabilidad, seguridad o estanqueidad.",
+      "d": "Debe incorporar siempre el presupuesto de las obras y el informe de las oficinas o unidades de supervisión."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 41,
+     "stem": "De conformidad con el artículo 37 del Decreto 36/2009, de 31 de marzo, por el que se establece el régimen general de subvenciones de la Comunidad Autónoma de Canarias, el pago de la subvención se realizará:",
+     "options": {
+      "a": "En el plazo mínimo de un mes desde la concesión.",
+      "b": "En el plazo máximo de tres meses desde la concesión.",
+      "c": "En el plazo máximo de seis meses desde la concesión.",
+      "d": "Previa justificación por el beneficiario de la realización de la actividad, proyecto, objetivo o adopción del comportamiento para el que se concedió, salvo la posibilidad de realizar pagos anticipados y pagos a cuenta."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 42,
+     "stem": "De conformidad con el artículo 61 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, el órgano de contratación si tiene carácter administrativo:",
+     "options": {
+      "a": "Podrá delegar o desconcentrar sus competencias y facultades, cumpliendo las normas y formalidades aplicables para esa delegación o desconcentración.",
+      "b": "Podrá desconcentrar sus competencias y facultades, pero nunca delegar sus competencias.",
+      "c": "Nunca podrá delegar ni desconcentrar sus competencias y facultades por la especialidad de la materia.",
+      "d": "Podrá delegar sus competencias y facultades únicamente en la Mesa de Contratación por la especialidad de la materia."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 43,
+     "stem": "Según el Decreto 41/2023, de 14 de julio, por el que se determinan las competencias de la Presidencia y Vicepresidencia, así como el número, denominación, competencias y orden de precedencias de las Consejerías, las competencias en materia de reconstrucción de la isla de La Palma están atribuidas actualmente:",
+     "options": {
+      "a": "Al consejero o consejera de Transición Ecológica, Lucha contra el Cambio Climático y Planificación Territorial.",
+      "b": "Al consejero o consejera de Presidencia, Administraciones Públicas, Justicia y Seguridad.",
+      "c": "Al consejero o consejera de Turismo, Industria y Comercio.",
+      "d": "Al consejero o consejera que designe la Presidencia del Gobierno de entre los que tengan origen en dicha isla."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 44,
+     "stem": "Conforme al artículo 11 de la Ley 7/2015, de 1 de abril, de Municipios de Canarias, los municipios canarios asumirán, en todo caso, las competencias que les asignen como propias las leyes sectoriales de la Comunidad Autónoma de Canarias sobre:",
+     "options": {
+      "a": "Determinación, creación, modificación y supresión de las entidades locales.",
+      "b": "Deporte.",
+      "c": "Tutela financiera de la Hacienda pública.",
+      "d": "Procedimiento administrativo común."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 45,
+     "stem": "De conformidad con el artículo 109 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, se pueden rectificar:",
+     "options": {
+      "a": "Los actos de gravamen o desfavorables, siempre que no constituya dispensa o exención no permitida por las leyes, ni sea contraria al principio de igualdad, al interés público o al ordenamiento jurídico, y no haya transcurrido el plazo de prescripción.",
+      "b": "Los actos de gravamen o desfavorables, siempre que no constituya dispensa o exención no permitida por las leyes, ni sea contraria al principio de igualdad, al interés público o al ordenamiento jurídico, en cualquier momento.",
+      "c": "Los errores materiales, de hecho o aritméticos existentes en los actos administrativos, siempre que no haya transcurrido el plazo de prescripción.",
+      "d": "Los errores materiales, de hecho o aritméticos existentes en los actos administrativos, en cualquier momento."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 46,
+     "stem": "De conformidad con el artículo 35 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, debe ser motivado el acto:",
+     "options": {
+      "a": "Que mantiene el dictamen del órgano consultivo, permitiendo expresar también el criterio propio del órgano instructor.",
+      "b": "De ampliación de plazos.",
+      "c": "Que resuelve una actuación administrativa automatizada.",
+      "d": "De admisión de las pruebas propuestas por el único interesado."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 47,
+     "stem": "De conformidad con el artículo 82 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, en Canarias, el trámite de audiencia a los interesados será:",
+     "options": {
+      "a": "Anterior a la solicitud del Dictamen del Consejo Consultivo de Canarias, en el caso que éste forme parte del procedimiento.",
+      "b": "Simultáneo a la solicitud del Dictamen del Consejo Consultivo de Canarias, en el caso que éste forme parte del procedimiento.",
+      "c": "Posterior a la solicitud del informe del Dictamen del Consejo Consultivo de Canarias, en el caso que éste forme parte del procedimiento.",
+      "d": "Prescindible, si es preceptiva la solicitud del Dictamen del Consejo Consultivo de Canarias."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 48,
+     "stem": "De conformidad con el artículo 86 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, en los procedimientos administrativos de responsabilidad patrimonial, la responsabilidad patrimonial del Estado por el funcionamiento de la Administración de Justicia se regirá:",
+     "options": {
+      "a": "El Código Civil.",
+      "b": "El Código Penal.",
+      "c": "Los procedimientos especiales de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público.",
+      "d": "La Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 49,
+     "stem": "De conformidad con el artículo 30 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, cuando el último día de un plazo sea inhábil:",
+     "options": {
+      "a": "Finalizará el plazo en el día anterior.",
+      "b": "Se entenderá prorrogado el plazo al primer día hábil siguiente.",
+      "c": "Se entenderá prorrogado el plazo al primer día hábil siguiente solamente cuando así lo prevea una norma reglamentaria.",
+      "d": "Se entenderá prorrogado el plazo al primer día hábil siguiente solamente cuando así lo prevea expresamente el propio procedimiento."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 50,
+     "stem": "De conformidad con el artículo 12 del Decreto 36/2009, de 31 de marzo, por el que se establece el régimen general de subvenciones de la Comunidad Autónoma de Canarias, en las subvenciones de la Administración de la Comunidad Autónoma de Canarias, la inclusión de la Identidad Corporativa Gráfica del Gobierno de Canarias, como medida de publicidad de la subvención por parte del beneficiario, es:",
+     "options": {
+      "a": "Obligatoria solo si la subvención es de concesión directa.",
+      "b": "Obligatoria solo cuando los exijan las bases de la subvención.",
+      "c": "Obligatoria solo si lo determina la Intervención General de la Comunidad Autónoma.",
+      "d": "Obligatoria en todo caso."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 51,
+     "stem": "De conformidad con el artículo 119 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, la tramitación urgente del expediente de contratación:",
+     "options": {
+      "a": "Permite la contratación verbal.",
+      "b": "Permite transformar los días hábiles en días naturales.",
+      "c": "Supone tramitarlo siguiendo el mismo procedimiento que la tramitación ordinaria, con algunas especialidades, como la reducción de determinados plazos.",
+      "d": "Obliga a que el plazo de inicio de la ejecución del contrato no sea superior a un mes, contado desde la declaración de urgencia."
+     },
+     "answer": "c",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 52,
+     "stem": "De conformidad con el artículo 6 del Decreto 36/2009, de 31 de marzo, por el que se establece el régimen general de subvenciones de la Comunidad Autónoma de Canarias, con carácter general, se aprobará un plan estratégico de subvenciones para:",
+     "options": {
+      "a": "El conjunto del Gobierno de Canarias, que abarcará las subvenciones tanto de sus departamentos como de los organismos y demás entes públicos vinculados.",
+      "b": "Cada uno de los departamentos del Gobierno de Canarias, que abarcará las subvenciones tanto de sus órganos como de los organismos y demás entes públicos a él vinculados.",
+      "c": "Cada uno de los centros directivos del Gobierno de Canarias, que abarcará las subvenciones tanto de sus órganos como de los organismos y demás entes públicos a él vinculados.",
+      "d": "Cada uno de los centros directivos del Gobierno de Canarias y otro independiente para cada uno de los organismos y demás entes públicos a él vinculados."
+     },
+     "answer": "b",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 53,
+     "stem": "De conformidad con el artículo 33 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la tramitación de urgencia reducirá los plazos establecidos para el procedimiento ordinario:",
+     "options": {
+      "a": "En tres días hábiles en la totalidad de plazos.",
+      "b": "A la mitad en la totalidad de plazos.",
+      "c": "A la mitad en la totalidad de plazos, salvo los relativos a los recursos.",
+      "d": "A la mitad en la totalidad de plazos, salvo los relativos a la presentación de solicitudes y recursos."
+     },
+     "answer": "d",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 54,
+     "stem": "Según el artículo 60 del Estatuto Básico del Empleado Público, cuyo texto refundido fue aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, en la adquisición de la condición de funcionario de carrera, en los órganos de selección:",
+     "options": {
+      "a": "Se tenderá a la paridad entre mujer y hombre.",
+      "b": "Puede participar el personal de elección política.",
+      "c": "Debe participar obligatoriamente un representante por cada uno de los sindicatos más representativos en la Comunidad Autónoma.",
+      "d": "Se permitirá un máximo de un tercio de funcionarios que tengan la condición de interinos."
+     },
+     "answer": "a",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    }
+   ]
+  }
+ ]
+}

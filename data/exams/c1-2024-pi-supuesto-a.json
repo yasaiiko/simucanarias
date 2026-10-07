@@ -1,0 +1,409 @@
+{
+ "id": "c1-2024-pi-supuesto-a",
+ "title": "C1 Administrativo · Promoción interna · Convocatoria BOC 239/2024 · Ejercicio único, parte práctica (supuesto A)",
+ "group": "C1",
+ "kind": "practico",
+ "source_url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/examenes/conv_2024/C1/respuestas_test_practico_A_promo_int_C111I24_02122025.pdf",
+ "published": "02/12/2025",
+ "blocks": [
+  {
+   "kind": "practico",
+   "title": "Supuesto práctico A",
+   "context": "La Consejería de Educación, Formación Profesional, Actividad Física y Deportes del Gobierno de Canarias ha decidido acometer obras de acondicionamiento en 10 centros públicos de enseñanza repartidos en seis municipios de la isla de Fuerteventura.\n\nEl objetivo es mejorar las condiciones de los centros conforme a un proyecto técnico previamente redactado. Las obras a realizar consisten en reparaciones de las instalaciones eléctricas, actualización de las instalaciones de fontanería, sustitución de sanitarios, reparación de cubiertas, etc.\n\nDado el número de centros afectados y el carácter de las obras, el órgano de contratación está valorando que el expediente sea tramitado de forma urgente, con el siguiente plan de trabajo y financiación:\n\n• Año 2025: 846.766,62 €\n• Año 2026: 604.833,34 €\n• Importe de licitación (sin IGIC): 1.356.635,47 €\n• IGIC: 94.964,49 €\n• Plazo de ejecución: 12 meses\n• Prórroga: Sí, prevista en el pliego.",
+   "questions": [
+    {
+     "n": 30,
+     "stem": "Los requisitos de capacidad y solvencia se incluirán:",
+     "options": {
+      "a": "En los pliegos de cláusulas administrativas particulares y de prescripciones técnicas.",
+      "b": "En los proyectos de obra.",
+      "c": "En el anteproyecto de obra y explotación.",
+      "d": "En el anuncio de licitación."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 31,
+     "stem": "El órgano de contratación podrá, en el presente caso, además de los requisitos de solvencia técnica previstos en la Ley 9/2017, de 8 noviembre, de Contratos del Sector Público para este tipo de contratos, solicitar:",
+     "options": {
+      "a": "Experiencia en obras similares, mediante certificaciones.",
+      "b": "Mediante un seguro de responsabilidad profesional.",
+      "c": "En este contrato no será necesario.",
+      "d": "Patrimonio neto."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 32,
+     "stem": "Los requisitos de solvencia del presente contrato se acreditarán:",
+     "options": {
+      "a": "Mediante el volumen anual de negocios (últimos 3 ejercicios).",
+      "b": "A través de la experiencia en obras similares (certificados).",
+      "c": "Por personal técnico y medios materiales.",
+      "d": "Mediante la clasificación del empresario en el grupo o subgrupo que en función del objeto del contrato corresponda, con categoría igual o superior a la exigida para el contrato."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 33,
+     "stem": "¿Quién es el órgano de contratación?",
+     "options": {
+      "a": "El Director/a General.",
+      "b": "El Consejero/a.",
+      "c": "El Gobierno autonómico.",
+      "d": "El responsable del contrato."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 34,
+     "stem": "¿Qué documentos deben obrar en el expediente antes de licitar?",
+     "options": {
+      "a": "Informe de necesidad, pliegos, fiscalización y crédito.",
+      "b": "Solo el proyecto técnico.",
+      "c": "Solo el Pliego de Cláusulas Administrativas Particulares.",
+      "d": "Únicamente, Informe jurídico y anuncio de licitación."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 35,
+     "stem": "En el expediente de contratación que nos ocupa, de acuerdo con el artículo 62 de la Ley 9/2017, de 8 noviembre, de Contratos del Sector Público, una vez adjudicado el contrato, el órgano de contratación, para supervisar su ejecución designará un responsable del contrato, que podrá ser:",
+     "options": {
+      "a": "Una persona física o jurídica, vinculada a la entidad contratante.",
+      "b": "Una persona física o jurídica, ajena a la entidad contratante.",
+      "c": "Una persona física vinculada a la entidad contratante.",
+      "d": "El Director Facultativo."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 36,
+     "stem": "De acuerdo con lo dispuesto en la Ley 5/2024, de 26 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Canarias para 2025, dentro de la estructura de los estados de gastos, el crédito necesario para la licitación de este contrato se clasificará en:",
+     "options": {
+      "a": "Clasificación orgánica y económica.",
+      "b": "Clasificación orgánica, por programas, económica y territorial",
+      "c": "Clasificación económica, financiera y por programas.",
+      "d": "Clasificación de gastos e ingresos."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 37,
+     "stem": "¿Qué jurisdicción es la competente para conocer las cuestiones que se susciten en el presente contrato?",
+     "options": {
+      "a": "El orden jurisdiccional civil, al concurrir contratistas privados.",
+      "b": "El orden jurisdiccional contencioso-administrativo.",
+      "c": "La Audiencia de Cuentas de Canarias.",
+      "d": "El tribunal de contratos del sector público."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 38,
+     "stem": "¿Cuál de los siguientes NO es un principio de la contratación pública?",
+     "options": {
+      "a": "Transparencia.",
+      "b": "Igualdad de trato.",
+      "c": "Confidencialidad absoluta.",
+      "d": "Libre concurrencia."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 39,
+     "stem": "¿Está el presente contrato sujeto a regulación armonizada?",
+     "options": {
+      "a": "No por tratarse de un contrato de servicios.",
+      "b": "No, por ser un contrato de obras cuyo valor estimado es inferior a 5.538,000€.",
+      "c": "No por ser un contrato de concesión de servicios.",
+      "d": "Sí, por ser un contrato de concesión de obras."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 40,
+     "stem": "¿Quién designa al responsable del presente contrato según el artículo 62 la Ley 9/2017, de 8 noviembre, de Contratos del Sector Público?",
+     "options": {
+      "a": "El contratista.",
+      "b": "El órgano de contratación.",
+      "c": "El Interventor.",
+      "d": "El Tribunal de Cuentas."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 41,
+     "stem": "¿Qué documento debe incorporarse, obligatoriamente, al inicio, en el presente expediente de contratación?",
+     "options": {
+      "a": "El certificado de existencia de crédito.",
+      "b": "El informe del Tribunal de Cuentas.",
+      "c": "El acta de constitución de la mesa de contratación.",
+      "d": "El contrato firmado."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 42,
+     "stem": "¿Quién aprueba el expediente de contratación en el presente supuesto?",
+     "options": {
+      "a": "El contratista.",
+      "b": "El órgano de contratación.",
+      "c": "El interventor.",
+      "d": "El responsable del contrato."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 43,
+     "stem": "¿Qué debe justificarse en el presente expediente de contratación?",
+     "options": {
+      "a": "La necesidad del contrato.",
+      "b": "Insuficiencia de medios.",
+      "c": "El precio máximo.",
+      "d": "El periodo de ejecución."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 44,
+     "stem": "¿Qué documento acredita la fiscalización previa?",
+     "options": {
+      "a": "El informe de intervención.",
+      "b": "El pliego de cláusulas.",
+      "c": "El certificado de crédito.",
+      "d": "El acta de adjudicación."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 45,
+     "stem": "Al tramitarse el presente expediente por urgencia, ¿cuáles serían los plazos para emitir los respectivos informes o cumplimentar los trámites?:",
+     "options": {
+      "a": "5 días.",
+      "b": "10 días.",
+      "c": "7 días.",
+      "d": "15 días."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 46,
+     "stem": "¿Dónde debe publicarse el acuerdo de inicio del expediente de contratación?",
+     "options": {
+      "a": "En la web de la Consejería de Educación, Formación Profesional, Actividad Física y Deportes.",
+      "b": "No hay que publicarlo.",
+      "c": "En el perfil del contratante",
+      "d": "En el Diario Oficial de la Unión Europea."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 47,
+     "stem": "Durante la tramitación del expediente de contratación, ¿en qué acto administrativo del órgano de contratación se aprueba el gasto?",
+     "options": {
+      "a": "En el acuerdo de inicio del expediente de contratación.",
+      "b": "En el acuerdo de aprobación del expediente.",
+      "c": "En el acuerdo de formalización del contrato.",
+      "d": "En el acuerdo de aprobación del proyecto de la obra."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 48,
+     "stem": "¿Puede el órgano de contratación declarar la tramitación urgente de este expediente?",
+     "options": {
+      "a": "Sí, porque se trata de un acontecimiento catastrófico que se ha de acometer de forma urgente.",
+      "b": "Sí, porque el contrato responde a razones de interés público.",
+      "c": "No, porque no es un contrato sujeto a regulación armonizada.",
+      "d": "No, al tratarse de un contrato de obras."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 49,
+     "stem": "El despacho del expediente de este contrato, de ser declarado urgente:",
+     "options": {
+      "a": "No tendrá preferencia en su despacho por los diferentes órganos que intervengan en su tramitación.",
+      "b": "Gozará de preferencia en su despacho por los diferentes órganos que intervengan en su tramitación.",
+      "c": "Sólo tendrá preferencia en su despacho en el trámite de emisión de informe de insuficiencia de medios.",
+      "d": "Sólo tendrá preferencia en el trámite de aprobación del expediente."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 50,
+     "stem": "El plazo de inicio de las obras, de ser declarado urgente:",
+     "options": {
+      "a": "No podrá exceder de 15 días desde la formalización.",
+      "b": "No podrá exceder de un mes desde la adjudicación.",
+      "c": "No podrá exceder de un mes desde la formalización.",
+      "d": "No podrá exceder de 15 días desde la adjudicación."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 51,
+     "stem": "En caso de que se decida tramitar el expediente de forma urgente, ¿Qué actuación debe realizar el órgano de contratación?",
+     "options": {
+      "a": "Ordenar la ejecución de lo necesario para satisfacer la necesidad sobrevenida.",
+      "b": "Dar cuenta de dicho acuerdo al Consejo de Gobierno.",
+      "c": "Indicar en el expediente la declaración de urgencia debidamente motivada.",
+      "d": "Declarar la urgencia del procedimiento en el pliego de prescripciones técnicas del procedimiento."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 52,
+     "stem": "En el caso de optar por la tramitación urgente y, existiendo complejidad en el expediente, si los órganos que deben evacuar el trámite no pueden cumplir el plazo de tramitación:",
+     "options": {
+      "a": "Deberán devolver el expediente al órgano de contratación para que lo tramite como ordinario.",
+      "b": "Se tendrá por evacuado el expediente en sentido positivo y se continuará con la tramitación.",
+      "c": "Lo pondrán en conocimiento del órgano de contratación y el plazo quedará prorrogado el tiempo necesario e imprescindible.",
+      "d": "Lo pondrán en conocimiento del órgano de contratación y el plazo quedará prorrogado hasta diez días."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 53,
+     "stem": "En el procedimiento que nos ocupa, de acuerdo con el artículo 13 de la Ley 9/2017, de 8 noviembre, de Contratos del Sector Público, ¿puede tramitarse de forma independiente la redacción del proyecto respecto de la ejecución de la obra?",
+     "options": {
+      "a": "No, obligatoriamente la redacción del proyecto técnico de la obra debe ser realizado por el contratista adjudicatario.",
+      "b": "Sí se puede ejecutar una aislada o conjuntamente con la redacción del proyecto técnico.",
+      "c": "Sólo en el contrato de concesión de obras puede contemplar la redacción del proyecto junto con la ejecución de la obra.",
+      "d": "No, porque la redacción del proyecto técnico es un contrato de servicios."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 54,
+     "stem": "Para poder concurrir a la presente licitación las uniones de empresarios, es preciso que, a efectos de la licitación:",
+     "options": {
+      "a": "Indiquen los nombres y las circunstancias de los que la constituyan y la participación de cada uno, así como que asumen el compromiso de constituirse formalmente en unión temporal en caso de resultar adjudicatarios del contrato.",
+      "b": "Formalicen la unión temporal en escritura pública.",
+      "c": "Nombrar un Director del Contrato.",
+      "d": "Darse de alta en el registro de uniones temporales de empresarios."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 55,
+     "stem": "El órgano de contratación en el presente procedimiento, respecto de lo dispuesto en el artículo 3 de la Ley 9/2017, de 8 noviembre, de Contratos del Sector Público, referente al ámbito subjetivo de la misma, tiene la condición de:",
+     "options": {
+      "a": "Poder adjudicador.",
+      "b": "Autoridad contratante.",
+      "c": "Entidad pública empresarial.",
+      "d": "Entidad de derecho público."
+     },
+     "answer": "a",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 56,
+     "stem": "De acuerdo con el contenido del artículo 25 de la Ley 9/2017, de 8 noviembre, de Contratos del Sector Público, el presente contrato tiene carácter:",
+     "options": {
+      "a": "Administrativo.",
+      "b": "Privado.",
+      "c": "Público.",
+      "d": "Mixto."
+     },
+     "answer": "a",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 57,
+     "stem": "¿Quién puede contratar esta obra con la Consejería de Educación, Formación Profesional, Actividad Física y Deportes?",
+     "options": {
+      "a": "Sólo las personas naturales o jurídicas españolas que se encuentren debidamente clasificadas.",
+      "b": "Sólo las personas jurídicas españolas, independientemente de su clasificación.",
+      "c": "Las personas naturales o jurídicas, españolas o extranjeras, que tengan plena capacidad de obrar, no estén incursas en alguna prohibición de contratar, y acrediten su solvencia económica y financiera y técnica o profesional o, en los casos en que así lo exija esta Ley, se encuentren debidamente clasificadas.",
+      "d": "Las personas naturales o jurídicas, españolas, que tengan plena capacidad de obrar, y acrediten su solvencia económica y financiera y técnica o profesional o, en los casos en que así lo exija esta Ley, se encuentren debidamente clasificadas."
+     },
+     "answer": "c",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    }
+   ]
+  }
+ ]
+}

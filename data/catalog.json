@@ -1,0 +1,105 @@
+{
+ "exams": [
+  {
+   "id": "c2-2022-libre-test2",
+   "title": "C2 Auxiliar · Turno libre · Convocatoria BOC 245/2022 · Primer ejercicio (cuestionario n.º 2)",
+   "group": "C2",
+   "kind": "general",
+   "source_url": "https://www.gobiernodecanarias.org/cpj/dgfp/procesos_selectivos/procesos_2022/auxi_libres/relacion_preguntas_respuestas_cuestionario_2_C2_LIBRES_11032024.pdf",
+   "published": "11/03/2024",
+   "note": "",
+   "blocks": [
+    {
+     "title": "Cuestionario",
+     "count": 50,
+     "reserves": 4
+    }
+   ]
+  },
+  {
+   "id": "c2-2022-libre-supuestos",
+   "title": "C2 Auxiliar · Turno libre · Convocatoria BOC 245/2022 · Segundo ejercicio (supuestos prácticos, 6/7/2024)",
+   "group": "C2",
+   "kind": "practico",
+   "source_url": "https://www.gobiernodecanarias.org/cpj/dgfp/procesos_selectivos/procesos_2022/auxi_libres/relacion_preguntas_respuestas_supuestos_segundo_ejercicio_C2_LI_08072024.pdf",
+   "published": "08/07/2024",
+   "note": "Plantilla provisional publicada por el tribunal el 08/07/2024. En la convocatoria de 2022 cada supuesto tenía 10 preguntas: aquí se puntúa de forma proporcional sobre 10.",
+   "blocks": [
+    {
+     "title": "Supuesto práctico 1",
+     "count": 10,
+     "reserves": 1
+    },
+    {
+     "title": "Supuesto práctico 2",
+     "count": 10,
+     "reserves": 1
+    }
+   ]
+  },
+  {
+   "id": "c1-2024-pi-teorico",
+   "title": "C1 Administrativo · Promoción interna · Convocatoria BOC 239/2024 · Ejercicio único, parte teórica",
+   "group": "C1",
+   "kind": "general",
+   "source_url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/examenes/conv_2024/C1/respuestas_test_teorico_promo_int_C111I24_02122025.pdf",
+   "published": "02/12/2025",
+   "note": "Examen de promoción interna con 3 opciones por pregunta.",
+   "blocks": [
+    {
+     "title": "Cuestionario",
+     "count": 25,
+     "reserves": 4
+    }
+   ]
+  },
+  {
+   "id": "c1-2024-pi-supuesto-a",
+   "title": "C1 Administrativo · Promoción interna · Convocatoria BOC 239/2024 · Ejercicio único, parte práctica (supuesto A)",
+   "group": "C1",
+   "kind": "practico",
+   "source_url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/examenes/conv_2024/C1/respuestas_test_practico_A_promo_int_C111I24_02122025.pdf",
+   "published": "02/12/2025",
+   "note": "",
+   "blocks": [
+    {
+     "title": "Supuesto práctico A",
+     "count": 25,
+     "reserves": 3
+    }
+   ]
+  },
+  {
+   "id": "c1-2024-pi-supuesto-b",
+   "title": "C1 Administrativo · Promoción interna · Convocatoria BOC 239/2024 · Ejercicio único, parte práctica (supuesto B)",
+   "group": "C1",
+   "kind": "practico",
+   "source_url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/examenes/conv_2024/C1/respuestas_test_practico_B_promo_int_C111I24_02122025.pdf",
+   "published": "02/12/2025",
+   "note": "",
+   "blocks": [
+    {
+     "title": "Supuesto práctico B",
+     "count": 25,
+     "reserves": 3
+    }
+   ]
+  },
+  {
+   "id": "c1-2022-pi-test",
+   "title": "C1 Administrativo · Promoción interna · Convocatoria BOC 245/2022 · Primer ejercicio (cuestionario n.º 2)",
+   "group": "C1",
+   "kind": "general",
+   "source_url": "https://www.gobiernodecanarias.org/cpj/dgfp/procesos_selectivos/procesos_2022/admvos_PI/test_resuelto_primer_ejercicio_C1_PI_03102023.pdf",
+   "published": "03/10/2023",
+   "note": "",
+   "blocks": [
+    {
+     "title": "Cuestionario",
+     "count": 50,
+     "reserves": 4
+    }
+   ]
+  }
+ ]
+}

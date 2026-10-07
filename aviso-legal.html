@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso legal y privacidad · SimuCanarias</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="./"><span class="logo-mark">S</span>SimuCanarias</a></div></header>
+<main class="wrap narrow" style="padding:28px 16px 40px">
+  <h1>Aviso legal y privacidad</h1>
+
+  <h2>Titular</h2>
+  <p>Este sitio web y el simulador SimuCanarias son un proyecto de <strong>Víctor Carrión</strong>, persona física residente en España. Contacto: <a class="js-mail" href="#"></a>.</p>
+  <p>Las compras se realizan a través de <strong>Gumroad, Inc.</strong>, que actúa como vendedor registrado (<em>merchant of record</em>): procesa el pago, emite el justificante y gestiona los impuestos aplicables. Las condiciones de compra y reembolso (14 días) se muestran en la página de pago.</p>
+
+  <h2>Independencia</h2>
+  <p>SimuCanarias es una herramienta independiente. No tiene relación con el Gobierno de Canarias, su Dirección General de la Función Pública ni ningún tribunal calificador. Las preguntas y respuestas proceden de exámenes publicados por la propia Administración en su web, y cada pregunta enlaza a su documento de origen. Las respuestas reflejan la plantilla oficial publicada; la normativa puede haber cambiado desde entonces.</p>
+  <p>La información de este sitio es orientativa. Para cualquier cuestión sobre el proceso selectivo, consulta siempre las bases (BOC n.º 57/2026) y los anuncios oficiales.</p>
+
+  <h2>Privacidad</h2>
+  <ul>
+    <li>Esta web <strong>no usa cookies, ni analítica, ni publicidad</strong>, ni pide registro.</li>
+    <li>Tus respuestas, historial y estadísticas se guardan solo en el almacenamiento local de tu navegador (localStorage). No se envían a ningún servidor.</li>
+    <li>Al activar el pase, la clave de licencia se envía a la API de Gumroad para comprobar que es válida. Gumroad trata los datos de tu compra según su <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">política de privacidad</a>.</li>
+    <li>La web está alojada en GitHub Pages, que puede registrar datos técnicos de acceso (como la dirección IP) por motivos de seguridad.</li>
+    <li>Si nos escribes por email, usaremos tu dirección solo para responderte. Puedes pedir que borremos tus mensajes en cualquier momento.</li>
+  </ul>
+  <p><a href="./">← Volver</a></p>
+</main>
+<script src="assets/config.js"></script>
+<script>document.querySelectorAll('.js-mail').forEach(a => { a.href = 'mailto:' + SIMU_CONFIG.contactEmail; a.textContent = SIMU_CONFIG.contactEmail; });</script>
+</body>
+</html>

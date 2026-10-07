@@ -1,0 +1,409 @@
+{
+ "id": "c1-2024-pi-supuesto-b",
+ "title": "C1 Administrativo · Promoción interna · Convocatoria BOC 239/2024 · Ejercicio único, parte práctica (supuesto B)",
+ "group": "C1",
+ "kind": "practico",
+ "source_url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/examenes/conv_2024/C1/respuestas_test_practico_B_promo_int_C111I24_02122025.pdf",
+ "published": "02/12/2025",
+ "blocks": [
+  {
+   "kind": "practico",
+   "title": "Supuesto práctico B",
+   "context": "El 14 de marzo de 2025, Don Carlos Ruiz, como representante de la empresa PanelSolar S.L, con sede en Tenerife, presenta telemáticamente ante la Dirección General de Energía, adscrita a la Viceconsejería de Transición Ecológica, Lucha contra el Cambio Climático y Energía, de la Consejería de Transición Ecológica y Energía del Gobierno de Canarias, una solicitud de autorización para la instalación de una de planta de energía solar.\n\nSe le informa que el plazo máximo de resolución y notificación es de 6 meses, y que, en caso de silencio, la solicitud se entenderá desestimada.\n\nDesarrollo del Procedimiento\n\n1. Requerimiento de Subsanación (20 de marzo de 2025): La Dirección General de Energía requiere a Don Carlos Ruiz la subsanación de varios defectos en la documentación.\n\n2. Actuación del Interesado (28 de marzo de 2025): Don Carlos Ruiz presenta la documentación subsanada.\n\n3. Actuación Complementaria: La Dirección General de Energía acuerda solicitar, mediante un informe facultativo, a la Dirección General de Ordenación del Territorio sobre la idoneidad del terreno donde se va a instalar la planta de energía solar. Este informe se solicita el 5 de mayo de 2025 y la Dirección General lo remite el 15 de mayo de 2025.\n\n4. Notificación de Resolución (12 de septiembre de 2025): La Dirección General de Energía notifica la denegación de la autorización. Don Carlos Ruiz no accede a la notificación en el sistema electrónico hasta el 15 de septiembre de 2025.\n\n5. Recurso de Alzada (9 de octubre de 2025): Don Carlos Ruiz interpone Recurso de Alzada.\n\n[El enunciado incluye un calendario del año 2025 (imagen) con la siguiente leyenda. Festivo Nacional: 1 y 6 de enero, 18 de abril, 1 de mayo, 15 de agosto, 1 de noviembre, 6, 8 y 25 de diciembre. Festivo Autonómico: 17 de abril y 30 de mayo.]",
+   "questions": [
+    {
+     "n": 30,
+     "stem": "La Dirección General de Energía del Gobierno de Canarias, como órgano encargado de la tramitación del procedimiento:",
+     "options": {
+      "a": "Someterá el mismo al principio de celeridad, lo impulsará de oficio en todos sus trámites y a través de medios electrónicos, respetando los principios de transparencia y publicidad.",
+      "b": "Guardará en el despacho de los expedientes el orden riguroso de amistad en asuntos de homogénea naturaleza, salvo que por el titular de la unidad administrativa se dé orden motivada en contrario, de la que quede constancia",
+      "c": "De acuerdo con el principio de complejidad administrativa, acordará en un solo acto todos los trámites que, por su naturaleza, permitan su acumulación.",
+      "d": "Resolverá el mismo en el plazo que pueda, según la carga de trabajo."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 31,
+     "stem": "Para la presentación de la solicitud del supuesto, ¿está Don Carlos Ruiz obligado a relacionarse electrónicamente con la Administración?:",
+     "options": {
+      "a": "No, si opta por presentar la documentación de forma presencial.",
+      "b": "Sí, obligatoriamente por actuar como representante de la empresa PanelSolar S.L.",
+      "c": "No, solo están obligadas las personas jurídicas.",
+      "d": "Solo para la presentación de solicitudes, no para los demás trámites."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 32,
+     "stem": "El requerimiento de subsanación se notifica el 20 de marzo de 2025. ¿Cuál es el plazo legal, por regla general, para que Don Carlos Ruiz subsane los defectos?",
+     "options": {
+      "a": "10 días hábiles, con indicación de que, si así no lo hiciera, se le tendrá por desistido de su petición.",
+      "b": "15 días naturales, con apercibimiento de multa.",
+      "c": "15 días naturales, con apercibimiento de tenerle por desistido.",
+      "d": "10 días naturales, desde el requerimiento."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 33,
+     "stem": "¿Cómo afecta el requerimiento de subsanación al plazo máximo de 6 meses para resolver y notificar?",
+     "options": {
+      "a": "No le afecta, el plazo sigue corriendo con normalidad.",
+      "b": "Lo suspende solo por el tiempo que el interesado tarde en subsanar.",
+      "c": "Lo interrumpe y se reinicia el cómputo del plazo por completo.",
+      "d": "Lo suspende por el tiempo que medie entre el requerimiento y su efectivo cumplimiento, o, en su defecto, por el del plazo concedido."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 34,
+     "stem": "Don Carlos Ruiz solicita una ampliación del plazo para presentar la subsanación:",
+     "options": {
+      "a": "No cabe, ya que es un procedimiento con concurrencia competitiva.",
+      "b": "La ampliación podría ser igual al plazo inicialmente concedido.",
+      "c": "Solo se podrá ampliar para presentar alegaciones durante el trámite de audiencia",
+      "d": "Podrá ser ampliado prudencialmente, hasta cinco días, cuando la aportación de los documentos requeridos presente dificultades especiales"
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 35,
+     "stem": "La solicitud del informe a la Dirección General de Ordenación del Territorio realizado el 5 de mayo de 2025 y recibido el 15 de mayo de 2025, ¿supone la suspensión del plazo máximo de resolución?",
+     "options": {
+      "a": "Sí, se suspende por el plazo que media entre la petición y la recepción del informe.",
+      "b": "No, solo se podrá suspender el plazo cuando se trate de informes preceptivos.",
+      "c": "Sí, pero solo por un máximo de 15 días, con independencia de cuándo se reciba.",
+      "d": "Sí, se suspende por el plazo que la Administración tenía para solicitar el informe."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 36,
+     "stem": "La notificación de la denegación se puso a disposición el 12 de septiembre de 2025 y Don Carlos Ruiz accedió el 15 de septiembre de 2025. ¿Cuál es la fecha de efectos legales de la notificación?",
+     "options": {
+      "a": "12 de septiembre de 2025 (fecha de puesta a disposición).",
+      "b": "16 de septiembre de 2025 (día siguiente al acceso).",
+      "c": "15 de septiembre de 2025 (fecha de acceso a la notificación).",
+      "d": "13 de septiembre de 2025 (día siguiente de la puesta a disposición)."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 37,
+     "stem": "Si Don Carlos Ruiz no hubiera accedido a la notificación denegatoria del 12 de septiembre de 2025, ¿cuándo se entendería rechazada y, por tanto, practicada la notificación?",
+     "options": {
+      "a": "Transcurridos 15 días naturales desde su puesta a disposición.",
+      "b": "Transcurridos 3 días hábiles desde su puesta a disposición.",
+      "c": "Transcurridos 10 días naturales desde su puesta a disposición.",
+      "d": "Transcurridos1 mes desde su puesta a disposición."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 38,
+     "stem": "Don Carlos Ruiz interpone Recurso de Alzada. ¿Cuál es el plazo máximo para interponer el recurso, contado desde la fecha de notificación?",
+     "options": {
+      "a": "Seis meses.",
+      "b": "Un mes.",
+      "c": "Diez días hábiles.",
+      "d": "Tres meses."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 39,
+     "stem": "¿Ante qué órgano puede Don Carlos Ruiz interponer el Recurso de Alzada?",
+     "options": {
+      "a": "Ante el mismo órgano que dictó el acto o ante el competente para resolverlo.",
+      "b": "Solo ante el Tribunal Superior de Justicia de Canarias.",
+      "c": "Directamente ante la Sala de lo Contencioso-Administrativo.",
+      "d": "Exclusivamente ante el órgano superior jerárquico (Viceconsejería o Consejería)."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 40,
+     "stem": "Si, pasado el plazo para interponer el recurso de alzada, la Dirección General de Energía detecta un vicio en el procedimiento que lo hace nulo de pleno derecho, ¿podría declarar de oficio la nulidad de la resolución de denegación?",
+     "options": {
+      "a": "No, los actos desestimatorios solo pueden ser anulados por la Jurisdicción Contencioso-Administrativa.",
+      "b": "Sí, a través de la figura de la revisión de oficio de actos nulos.",
+      "c": "No, el acto es firme y solo cabe el recurso extraordinario de revisión.",
+      "d": "Sí, pero solo mediante la figura de la declaración de lesividad."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 41,
+     "stem": "¿Qué plazo tiene el órgano competente para resolver y notificar el Recurso de Alzada?",
+     "options": {
+      "a": "Un mes.",
+      "b": "Dos meses.",
+      "c": "Diez días hábiles.",
+      "d": "Tres meses."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 42,
+     "stem": "Transcurrido el plazo para resolver el Recurso de Alzada sin notificación expresa, ¿cuál es el sentido del silencio administrativo?",
+     "options": {
+      "a": "Desestimatorio.",
+      "b": "Caducidad del recurso.",
+      "c": "Depende de la naturaleza del acto impugnado.",
+      "d": "Estimatorio, ya que el silencio positivo es la regla general en los procedimientos a solicitud."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 43,
+     "stem": "¿Está Don Carlos Ruiz obligado a presentar documentación que ya obre en poder de la Dirección General de Energía?",
+     "options": {
+      "a": "No, tiene derecho a no aportar documentos que ya se encuentren en poder de la Administración actuante o hayan sido elaborados por cualquier otra Administración.",
+      "b": "Sí, ya que el documento está en otro expediente y es difícil de localizar.",
+      "c": "Sí, con la finalidad de cotejar el documento presentado con el que obra en poder de la Dirección General de Energía.",
+      "d": "No, de acuerdo con el principio de buena fe."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 44,
+     "stem": "Si la Dirección General de Energía detecta una fecha incorrecta en el texto de la resolución, ¿cómo debe corregirlo?",
+     "options": {
+      "a": "Mediante la rectificación de errores.",
+      "b": "Mediante la declaración de lesividad.",
+      "c": "Mediante la revocación del acto.",
+      "d": "Mediante la revisión de oficio."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 45,
+     "stem": "La instrucción de un procedimiento, como puede ser la concesión de una Autorización que tenemos en el supuesto, corresponde por regla general, a:",
+     "options": {
+      "a": "El órgano que tramite el procedimiento.",
+      "b": "El órgano responsable de la Sede Electrónica.",
+      "c": "El órgano superior jerárquico del que deba resolver.",
+      "d": "Los interesados, mediante la aportación de todos los documentos necesarios."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 46,
+     "stem": "Si el informe solicitado por la Dirección General de Energía a la Dirección General de Ordenación del Territorio no hubiese sido remitido en plazo, ¿se podría dictar resolución sin él?",
+     "options": {
+      "a": "No, el informe no podrá ser suplido por ninguna otra prueba o informe.",
+      "b": "Sí, por tratarse de un procedimiento iniciado de oficio.",
+      "c": "Sí, ya que se trata de un informe facultativo.",
+      "d": "No, los informes jurídicos siempre son preceptivos y determinantes."
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 47,
+     "stem": "Si don Carlos Ruiz hubiese presentado la subsanación el sábado 29 de marzo de 2025, ¿cuándo se consideraría presentada a efectos de cómputo?",
+     "options": {
+      "a": "El mismo día.",
+      "b": "El siguiente día hábil.",
+      "c": "El día siguiente (domingo).",
+      "d": "Depende de si el sábado es festivo en la provincia."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 48,
+     "stem": "El calendario de días inhábiles de la Comunidad Autónoma de Canarias, a efectos de la Ley 39/2015, debe incluir:",
+     "options": {
+      "a": "Los días inhábiles de las Entidades Locales correspondientes a su ámbito territorial",
+      "b": "Los días festivos nacionales y los días festivos locales, sin incluir los sábados.",
+      "c": "Solo los días festivos nacionales y autonómicos.",
+      "d": "Todos los domingos y los días festivos de ámbito insular."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 49,
+     "stem": "Si la Dirección General Energía, decidiese acordar una ampliación del plazo para resolver el procedimiento:",
+     "options": {
+      "a": "Puede acordarlo sin necesidad de motivación ni notificación al interesado.",
+      "b": "Don Carlos Ruiz podría presentar un recurso de alzada contra dicha ampliación",
+      "c": "Puede acordar una ampliación de 7 meses.",
+      "d": "Contra dicho acuerdo no cabría recurso."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 50,
+     "stem": "Si Don Carlos Ruiz presentara un escrito de desistimiento al procedimiento, ¿cuál sería el efecto principal?",
+     "options": {
+      "a": "La suspensión del procedimiento hasta la resolución del órgano competente.",
+      "b": "La Administración debe continuar con el procedimiento, aunque no concurra interés público en la ayuda.",
+      "c": "La finalización del procedimiento y la extinción del derecho sustantivo a reclamar la ayuda",
+      "d": "La finalización del procedimiento y la posibilidad de iniciar un nuevo procedimiento posteriormente."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 51,
+     "stem": "Si Don Carlos Ruiz interpone un recurso contra la Resolución denegatoria, pero no hace mención al tipo de recurso:",
+     "options": {
+      "a": "No es obstáculo para su tramitación, siempre que se deduzca su verdadero carácter.",
+      "b": "Suspende la ejecución de la Resolución automáticamente.",
+      "c": "Es un obstáculo para la tramitación.",
+      "d": "Carecería manifiestamente de fundamento."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 52,
+     "stem": "Si se hubiese notificado a Don Carlos Ruiz un trámite de audiencia otorgándole 10 días para presentar alegaciones, durante ese tiempo:",
+     "options": {
+      "a": "No se suspende el plazo, sigue corriendo con normalidad.",
+      "b": "Se suspende el plazo solo por el tiempo que don Carlos Ruiz tarde en acceder a la notificación.",
+      "c": "Se interrumpe el plazo y se reinicia el cómputo por completo.",
+      "d": "Se suspende el plazo por el tiempo que medie entre la puesta a disposición de la notificación y su efectivo cumplimiento."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 53,
+     "stem": "Si el expediente no hubiese sido resuelto en el plazo de 6 meses y se hubiese producido el silencio administrativo,",
+     "options": {
+      "a": "Don Carlos deberá esperar a que le expidan un certificado acreditativo, a partir del cual podrá hacer valer el acto administrativo.",
+      "b": "Don Carlos podrá pedir un certificado acreditativo del silencio producido en cualquier momento desde que expire el plazo máximo para resolver y notificar la resolución expresa, sin que la misma se haya expedido.",
+      "c": "El certificado se expedirá únicamente bajo petición del interesado.",
+      "d": "Los efectos del silencio se producirán a partir del día siguiente a la fecha en la que sea emitido el certificado acreditativo."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 54,
+     "stem": "En el caso de que la resolución expresa del procedimiento se hubiese realizado el 10 de octubre de 2025:",
+     "options": {
+      "a": "La resolución expresa podrá estimar o desestimar la solicitud.",
+      "b": "La resolución expresa sólo podrá estimar la solicitud.",
+      "c": "Los interesados podrían interponer contra la resolución el recurso administrativo que resulte procedente, pero no recurso contencioso-administrativo.",
+      "d": "La Administración no tendría obligación de resolver."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 55,
+     "stem": "Si por razones de interés público se decide, de oficio, por parte de la Dirección General de Energía la tramitación simplificada del procedimiento:",
+     "options": {
+      "a": "Salvo que reste menos para su tramitación ordinaria, este deberá ser resuelto en 15 días, a contar desde el siguiente al que se notifique al interesado el acuerdo de tramitación simplificada del procedimiento.",
+      "b": "Cuando la Administración acuerde de oficio la tramitación simplificada del procedimiento deberá notificarlo a los interesados. Los cuales no se podrán oponer a la decisión.",
+      "c": "En cualquier momento del procedimiento anterior a su resolución, el órgano competente para su tramitación podrá acordar continuar con arreglo a la tramitación ordinaria.",
+      "d": "Salvo que reste menos para su tramitación ordinaria, este deberá ser resuelto en 3 meses, a contar desde el siguiente al que se notifique al interesado el acuerdo de tramitación simplificada del procedimiento."
+     },
+     "answer": "c",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 56,
+     "stem": "Don Carlos presenta el recurso de alzada ante la Dirección General de Energía,",
+     "options": {
+      "a": "La Dirección General deberá remitirlo al órgano competente para resolver en el plazo de diez días, con su informe y el expediente administrativo.",
+      "b": "La Dirección General deberá remitirlo al órgano competente para resolver en el plazo de quince días, con su informe y el expediente administrativo.",
+      "c": "La Dirección General deberá remitirlo al órgano competente para resolver en el plazo de veinte días, con su informe y el expediente administrativo.",
+      "d": "La Dirección General podrá acordar la inadmisión a trámite."
+     },
+     "answer": "a",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 57,
+     "stem": "Además de contra la resolución del procedimiento, contra que actos se puede interponer recurso administrativo.",
+     "options": {
+      "a": "Contra los actos de trámite, siempre que no decidan indirectamente el fondo del asunto, determinan la imposibilidad de continuar el procedimiento, producen indefensión o perjuicio irreparable a derechos e intereses legítimos, que cabrá fundar en cualquiera de los motivos de nulidad o anulabilidad previstos en los artículos 47 y 48 de la Ley 39/2015.",
+      "b": "Contra ningún otro, solo se puede interponer recurso administrativo contra la resolución del procedimiento.",
+      "c": "Contra los actos de trámite, si deciden directa o indirectamente el fondo del asunto, determinan la imposibilidad de continuar el procedimiento, producen indefensión o perjuicio irreparable a derechos e intereses legítimos, que cabrá fundar en cualquiera de los motivos de nulidad o anulabilidad previstos en los artículos 47 y 48 de la Ley 39/2015.",
+      "d": "Contra el acuerdo que declare la aplicación de la tramitación de urgencia."
+     },
+     "answer": "c",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    }
+   ]
+  }
+ ]
+}

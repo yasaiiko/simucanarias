@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SimuCanarias · Simulacro y calculadora de nota del ejercicio único (C1 y C2 Gobierno de Canarias 2026)</title>
+<meta name="description" content="Practica con exámenes oficiales del Gobierno de Canarias corregidos con las reglas reales de 2026 (BOC 57/2026): 50+25 preguntas, 100 minutos, penalización por grupos de fallos. Calculadora de nota gratis.">
+<meta property="og:title" content="SimuCanarias · Simulacro del ejercicio único C1/C2 Gobierno de Canarias">
+<meta property="og:description" content="Exámenes oficiales con su plantilla oficial, corregidos con las reglas reales de 2026. Calculadora de nota gratis.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a5cc2'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="./"><span class="logo-mark">S</span>SimuCanarias</a>
+    <nav class="top">
+      <a href="#calculadora" class="hide-sm">Calculadora</a>
+      <a href="#precio" class="hide-sm">Precio</a>
+      <a class="btn small" href="simulador.html">Abrir simulador</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Ejercicio único · BOC n.º 57/2026</span>
+      <h1>Ensaya el examen del Gobierno de Canarias tal y como lo vas a hacer el día D.</h1>
+      <p class="lead">Exámenes <strong>oficiales</strong> con su <strong>plantilla oficial</strong>, cronometrados y corregidos con las reglas reales de 2026: 50 preguntas + supuesto de 25, 100 minutos, −0,20 cada 3 fallos y −0,40 cada 2 fallos. Sabes tu nota al instante y dónde la estás perdiendo.</p>
+      <div class="cta-row">
+        <a class="btn" id="cta-free" href="simulador.html">Hacer un examen oficial gratis →</a>
+        <a class="btn ghost" href="#calculadora">Calcular mi nota</a>
+      </div>
+      <p class="small muted">Sin registro. Funciona en el móvil. Tus respuestas no salen de tu navegador.</p>
+      <div class="countdowns" id="countdowns"></div>
+    </div>
+  </section>
+
+  <section class="block" id="calculadora">
+    <div class="wrap">
+      <h2>Calculadora de nota del ejercicio único</h2>
+      <p class="muted">Introduce tus aciertos y fallos (los blancos se calculan solos). Fórmula exacta de las Bases 22 y 23: los fallos solo restan por <strong>grupos completos</strong>.</p>
+      <div class="grid2">
+        <div class="card calc">
+          <h3>Parte 1 · Test (50 preguntas)</h3>
+          <div class="row">
+            <div><label for="a1">Aciertos</label><input id="a1" type="number" min="0" max="50" value="35" inputmode="numeric"></div>
+            <div><label for="f1">Fallos</label><input id="f1" type="number" min="0" max="50" value="10" inputmode="numeric"></div>
+            <div><label>Blancos</label><input id="b1" type="number" disabled></div>
+          </div>
+          <div class="out" id="o1"></div>
+        </div>
+        <div class="card calc">
+          <h3>Parte 2 · Supuesto práctico (25 preguntas)</h3>
+          <div class="row">
+            <div><label for="a2">Aciertos</label><input id="a2" type="number" min="0" max="25" value="16" inputmode="numeric"></div>
+            <div><label for="f2">Fallos</label><input id="f2" type="number" min="0" max="25" value="5" inputmode="numeric"></div>
+            <div><label>Blancos</label><input id="b2" type="number" disabled></div>
+          </div>
+          <div class="out" id="o2"></div>
+        </div>
+      </div>
+      <div class="verdict" id="verdict"></div>
+      <p class="small muted" style="margin-top:10px">Base 22.5: «Por cada tres preguntas contestadas de forma errónea se descontará de la calificación total 0,20 puntos, sin que en ningún caso se pueda aplicar una penalización proporcional…». Base 23.6: lo mismo con 2 fallos y 0,40 puntos. Fuente: <a href="https://sede.gobiernodecanarias.org/boc/boc-a-2026-057-948.pdf" target="_blank" rel="noopener">BOC n.º 57, de 24/03/2026</a>.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>¿Me compensa contestar si dudo?</h2>
+      <p class="muted">Valor esperado de responder una pregunta que dejarías en blanco, según cuántas opciones puedas descartar (en puntos de la parte).</p>
+      <div class="grid2">
+        <div class="card"><h3>Parte 1 · Test</h3><table class="ev" id="ev1"></table></div>
+        <div class="card"><h3>Parte 2 · Supuesto</h3><table class="ev" id="ev2"></table></div>
+      </div>
+      <p class="small muted" style="margin-top:10px">Y un truco que casi nadie aplica: como se penaliza por grupos completos, el 1.º y 2.º fallo del test (y el 1.º del supuesto) no restan nada hasta completar el grupo. El simulador te dice en cada intento cuántos fallos "gratis" te quedaban.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>Qué incluye</h2>
+      <div class="grid3">
+        <div class="card"><h3>📄 Solo preguntas oficiales</h3><p class="muted small">Extraídas de los exámenes que publica la Dirección General de la Función Pública, con la respuesta que marcó el tribunal. Cada pregunta enlaza a su PDF original.</p></div>
+        <div class="card"><h3>⏱️ Condiciones reales</h3><p class="muted small">Cronómetro de 100 minutos para las dos partes (o 50 para la parte 2 si conservas nota), elección de 1 de 2 supuestos y preguntas de reserva.</p></div>
+        <div class="card"><h3>🎯 Estrategia de blancos</h3><p class="muted small">Marca las preguntas en las que dudas y al corregir verás qué nota habrías sacado dejándolas en blanco. Así sabes si arriesgar te suma o te resta.</p></div>
+        <div class="card"><h3>🔁 Repaso de falladas</h3><p class="muted small">Las preguntas que fallas se guardan para repetirlas hasta que salgan solas.</p></div>
+        <div class="card"><h3>🎲 Simulacros mezclados</h3><p class="muted small">Tests aleatorios con todo el banco oficial de C1 y C2 (la parte general comparte gran parte de la normativa).</p></div>
+        <div class="card"><h3>📱 Móvil y sin cuenta</h3><p class="muted small">No hay registro ni datos personales. Todo se guarda en tu propio navegador.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="precio">
+    <div class="wrap">
+      <div class="grid2">
+        <div class="card">
+          <h3>Gratis</h3>
+          <div class="price">0 €</div>
+          <ul class="check">
+            <li>Calculadora de nota y guía de penalización</li>
+            <li>Examen oficial completo: C2 turno libre (cuestionario n.º 2, 50 preguntas + reserva)</li>
+            <li>Corrección con las reglas de 2026 y revisión pregunta a pregunta</li>
+          </ul>
+          <a class="btn ghost" href="simulador.html">Empezar gratis</a>
+        </div>
+        <div class="card" style="border-color:var(--brand)">
+          <h3>Pase hasta el examen <span class="tag">C1 + C2</span></h3>
+          <div class="price"><span class="js-price">5,90 €</span> <small>pago único</small></div>
+          <ul class="check lock">
+            <li>Todos los exámenes oficiales disponibles: supuestos prácticos C2, tests y supuestos A/B del C1</li>
+            <li>Simulacro completo de 100 minutos (test + 1 de 2 supuestos)</li>
+            <li>Modo parte 2 (50 min) para quien conserva la nota</li>
+            <li>Tests aleatorios con todo el banco oficial</li>
+            <li>Repaso de falladas e informe de estrategia de blancos</li>
+            <li>Sin suscripción. Reembolso en 14 días si no te sirve</li>
+          </ul>
+          <a class="btn sun js-buy" href="#">Conseguir el pase · <span class="js-price">5,90 €</span></a>
+          <p class="small muted">Pago seguro con Gumroad (tarjeta, PayPal, Apple Pay/Google Pay). Recibes al momento una clave por email y la pegas en el simulador.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap narrow">
+      <h2>Preguntas frecuentes</h2>
+      <details class="faq"><summary>¿Las preguntas son oficiales?</summary><p>Sí. Solo usamos exámenes publicados por la Dirección General de la Función Pública del Gobierno de Canarias, con la respuesta correcta según el tribunal. Cada pregunta indica de qué examen sale y enlaza al PDF. Si la normativa ha cambiado después, la respuesta oficial puede no coincidir con la ley vigente: tenlo presente y avísanos si ves algo.</p></details>
+      <details class="faq"><summary>¿Esta web es del Gobierno de Canarias?</summary><p>No. Es una herramienta independiente sin relación con el Gobierno de Canarias. Los PDFs oficiales son gratuitos en su web; aquí pagas por el simulador (cronómetro, corrección con las reglas de 2026, estadísticas y repaso), no por las preguntas.</p></details>
+      <details class="faq"><summary>¿Sirve si me presento al C1 Administrativo de turno libre?</summary><p>Sí para practicar el formato, la gestión del tiempo y la normativa común. Los exámenes C1 publicados son de promoción interna, así que no cubren todo el temario de turno libre. No te vendemos humo: es un simulador de condiciones reales, no un temario.</p></details>
+      <details class="faq"><summary>¿Cómo recibo el acceso?</summary><p>Al pagar en Gumroad recibes una clave de licencia por email (también la verás en la pantalla de compra). Abre el simulador, pulsa «Tengo una clave» y pégala. Funciona en varios dispositivos.</p></details>
+      <details class="faq"><summary>¿Y si encuentro un error?</summary><p>Escríbenos indicando la pregunta. Lo corregimos el mismo día y, si eres cliente y te ha hecho perder tiempo, te devolvemos el dinero.</p></details>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap narrow">
+      <h2>Fuentes oficiales</h2>
+      <ul class="small" id="sources">
+        <li><a href="https://sede.gobiernodecanarias.org/boc/boc-a-2026-057-948.pdf" target="_blank" rel="noopener">BOC n.º 57/2026 · Bases de la convocatoria (formato y puntuación)</a></li>
+        <li><a href="https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/nota_informa_ejec_unico_C211L26_C211I26_C111L26_C111I26_E711L26_09092026.pdf" target="_blank" rel="noopener">Nota informativa DGFP de 09/09/2026 (fechas del ejercicio único)</a></li>
+        <li><a href="https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/examenes/Repositorio-de-Examenes-del-Grupo-C1/" target="_blank" rel="noopener">Repositorio de exámenes del Grupo C1</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>SimuCanarias es una herramienta independiente, sin relación con el Gobierno de Canarias. · <a href="aviso-legal.html">Aviso legal y privacidad</a> · <a href="#" class="js-mail">Contacto</a></p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/scoring.js"></script>
+<script>
+(function () {
+  const C = window.SIMU_CONFIG, S = window.Scoring, $ = (id) => document.getElementById(id);
+  document.querySelectorAll('.js-price').forEach(e => e.textContent = C.price);
+  document.querySelectorAll('.js-buy').forEach(a => a.href = C.gumroadUrl);
+  document.querySelectorAll('.js-mail').forEach(a => a.href = 'mailto:' + C.contactEmail + '?subject=SimuCanarias');
+  $('cta-free').href = 'simulador.html#/exam/' + C.freeExam;
+
+  // Countdowns
+  const t = new Date(), today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate());
+  $('countdowns').innerHTML = Object.values(C.examDates).map(d => {
+    const [y, m, dd] = d.iso.slice(0, 10).split('-').map(Number);
+    const days = Math.max(0, Math.round((Date.UTC(y, m - 1, dd) - today) / 864e5));
+    return `<div class="count"><b>${days} días</b><span>${d.label} · ${d.text}</span></div>`;
+  }).join('');
+
+  // Calculator
+  const clamp = (v, max) => Math.max(0, Math.min(max, parseInt(v, 10) || 0));
+  function part(kind, a, f, b, out, n) {
+    let A = clamp($(a).value, n), F = clamp($(f).value, n - A);
+    $(b).value = n - A - F;
+    const r = S.score(kind, A, F, n);
+    const g = S.RULES[kind].group;
+    $(out).innerHTML = `<div class="big">${S.fmt(r.mark)}</div>
+      <div class="small">${A} × ${S.fmt(r.value)} = ${S.fmt(A * r.value)} · penalización ${S.fmt(r.penalty)} (${r.groups} grupo${r.groups === 1 ? '' : 's'} de ${g} fallos)</div>
+      <div class="small" style="margin-top:6px">${r.pass ? '<span class="tag ok">Parte superada (≥ 5)</span>' : '<span class="tag bad">No llega a 5</span>'}
+      ${r.nextWrongCost ? `<span class="tag warn">El próximo fallo te resta ${S.fmt(r.nextWrongCost)}</span>` : `<span class="tag">${r.freeWrongsLeft === 1 ? 'Te queda 1 fallo' : `Te quedan ${r.freeWrongsLeft} fallos`} "gratis" antes de restar</span>`}</div>`;
+    return r;
+  }
+  function calc() {
+    const r1 = part('general', 'a1', 'f1', 'b1', 'o1', 50);
+    const r2 = part('practico', 'a2', 'f2', 'b2', 'o2', 25);
+    const e = S.exercise(r1.mark, r2.mark);
+    const v = $('verdict');
+    v.className = 'verdict ' + (e.pass ? 'ok' : 'bad');
+    v.textContent = `Nota del ejercicio (media): ${S.fmt(e.mean)} — ${e.pass ? 'APTO: superas las dos partes y la media.' : 'NO APTO: necesitas al menos 5 en cada parte y de media.'}`;
+  }
+  ['a1', 'f1', 'a2', 'f2'].forEach(id => $(id).addEventListener('input', calc));
+  calc();
+
+  // EV tables
+  function ev(kind, el) {
+    const rows = [0, 1, 2].map(k => {
+      let v = S.guessEV(kind, k); if (Math.abs(v) < 0.0005) v = 0;
+      const verdict = Math.abs(v) < 0.0005 ? '<span class="tag">Neutro</span>' : v > 0 ? '<span class="tag ok">Compensa</span>' : '<span class="tag bad">No compensa</span>';
+      return `<tr><td>Descarto ${k} de 4</td><td>${v > 0 ? '+' : ''}${S.fmt(v, 3)}</td><td>${verdict}</td></tr>`;
+    }).join('');
+    $(el).innerHTML = `<tr><th>Situación</th><th>Valor esperado</th><th></th></tr>${rows}`;
+  }
+  ev('general', 'ev1'); ev('practico', 'ev2');
+})();
+</script>
+</body>
+</html>

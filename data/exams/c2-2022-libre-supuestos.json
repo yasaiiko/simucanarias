@@ -1,0 +1,333 @@
+{
+ "id": "c2-2022-libre-supuestos",
+ "title": "C2 Auxiliar · Turno libre · Convocatoria BOC 245/2022 · Segundo ejercicio (supuestos prácticos, 6/7/2024)",
+ "group": "C2",
+ "kind": "practico",
+ "source_url": "https://www.gobiernodecanarias.org/cpj/dgfp/procesos_selectivos/procesos_2022/auxi_libres/relacion_preguntas_respuestas_supuestos_segundo_ejercicio_C2_LI_08072024.pdf",
+ "published": "08/07/2024",
+ "blocks": [
+  {
+   "kind": "practico",
+   "title": "Supuesto práctico 1",
+   "context": "D. Santiago Montoliu, residente en la Isla de La Palma, presenta solicitud, con fecha 14 de enero de 2024, en la sede electrónica de la Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad del Gobierno de Canarias, de subvención para el traslado de fallecidos (cadáver o cenizas) a su isla de procedencia o residencia dado que su padre falleció en el Hospital Universitario de Canarias el 18 de diciembre de 2023 (a donde fue trasladado e internado desde su isla de origen, por agravamiento de su enfermedad) y tuvo que costear los gastos de traslado a la Isla de La Palma. En dicha solicitud autoriza a que todas las comunicaciones se realicen electrónicamente. El plazo para resolver el procedimiento es de tres meses.\n\nQuince días más tarde recibe requerimiento remitido por correo postal por el que se le requiere para que aporte en el plazo de diez días documentos que acrediten que en el año 2023 su padre falleció en el Hospital Universitario de Canarias. Cuando D. Santiago calcula el plazo para presentar la documentación ve que finaliza el jueves 8 de febrero que es festivo en su localidad.\n\nDon Santiago no encuentra ningún documento que acredite el ingreso hospitalario de su padre en el HUC por lo que el viernes 9 de febrero presenta escrito indicando que no está obligado a presentar documentos que obren en la Administración.\n\nEl 6 de marzo, de nuevo por correo postal, recibe resolución por la que se archiva el procedimiento indicando que la razón del archivo es que no ha aportado la documentación requerida y que, además, el escrito que ha presentado está fuera de plazo. La Resolución la firma el Director General de Salud Pública con quien Don Santiago hace dos años tuvo un conflicto judicial derivado de un conflicto por invasión de su propiedad.\n\nEl 6 de abril presenta recurso de alzada por sede electrónica y, simultáneamente, presenta recusación contra el Director General.",
+   "questions": [
+    {
+     "n": 1,
+     "stem": "¿Qué día se inicia el procedimiento a los efectos del cómputo de plazo máximo para resolver y notificar?",
+     "options": {
+      "a": "El 14 de enero de 2024",
+      "b": "El 15 de enero de 2024",
+      "c": "El 16 de enero de 2024",
+      "d": "El día del fallecimiento"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 2,
+     "stem": "¿La documentación aportada por el Sr. Montoliu está presentada dentro del plazo conferido?",
+     "options": {
+      "a": "Sí, porque cuando un día fuese hábil en el municipio en que residiese el interesado, e inhábil en la sede del órgano administrativo, o a la inversa, se considerará inhábil en todo caso",
+      "b": "No, porque supera el plazo de 10 días hábiles",
+      "c": "Sí, porque la presentó por correo.",
+      "d": "No, porque supera el plazo de 10 días naturales"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 3,
+     "stem": "¿Ha actuado correctamente la Administración al requerirle documentos que obran en poder de la administración sanitaria?",
+     "options": {
+      "a": "No, porque no se pueden pedir informes médicos de fallecidos.",
+      "b": "No, porque los interesados tienen derecho a no aportar documentos que ya se encuentren en poder de la Administración actuante o hayan sido elaborados por cualquier otra Administración",
+      "c": "Sí, porque son documentos de aportación preceptiva",
+      "d": "Es algo que no está regulado en ningún precepto de la Ley 39/2015."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 4,
+     "stem": "¿Cuándo ha vencido el plazo para resolver la solicitud de ayuda formulada por D. Santiago?",
+     "options": {
+      "a": "El 14 de abril de 2024",
+      "b": "El 15 de abril de 2024",
+      "c": "El 9 de mayo de 2024",
+      "d": "No vence nunca"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 5,
+     "stem": "¿ El recurso de alzada está presentado dentro de plazo?",
+     "options": {
+      "a": "Sí, conforme al artículo 122 de la Ley 39/2015",
+      "b": "No, porque el plazo finalizaba el 5 de abril",
+      "c": "No, porque el plazo para interponerlo son 20 días",
+      "d": "No, porque el plazo para interponerlo son 10 días"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 6,
+     "stem": "Si el recurso fuese extemporáneo, ¿qué debería hacer la Consejería?",
+     "options": {
+      "a": "Inadmitir",
+      "b": "Desestimar por haberse presentado fuera de plazo",
+      "c": "Continuar con su tramitación por ser garantista para el interesado",
+      "d": "Es algo que no está previsto expresamente en la norma"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 7,
+     "stem": "¿Qué motivo de concurrencia de causa de abstención debiera haber invocado D. Santiago Montoliú en el incidente de recusación planteado?",
+     "options": {
+      "a": "El del artículo 23.2 c) de la Ley 40/2015, de 1 de octubre",
+      "b": "El del artículo 23.2 a) de la Ley 40/2015, de 1 de octubre",
+      "c": "El del artículo 23.2 d) de la Ley 40/2015, de 1 de octubre",
+      "d": "El del artículo 23.2 e) de la Ley 40/2015, de 1 de octubre"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 8,
+     "stem": "¿ Qué consecuencias tiene la presentación de la recusación?",
+     "options": {
+      "a": "Ninguna",
+      "b": "La suspensión imperativa del procedimiento",
+      "c": "La suspensión facultativa del procedimiento",
+      "d": "En los procedimientos de subvenciones no es posible la recusación"
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 9,
+     "stem": "¿Afecta la recusación presentada al cómputo del plazo para resolver el recurso de alzada?",
+     "options": {
+      "a": "No, porque el recusado no es quien va a resolver el recurso",
+      "b": "Sí, en todo caso, dado que se suspende la tramitación",
+      "c": "Sí, pero sólo y exclusivamente, si resolviera el Director General",
+      "d": "No, en ningún caso"
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 10,
+     "stem": "¿ Cuándo termina el plazo para resolver el recurso de alzada presentado?",
+     "options": {
+      "a": "El 7 de junio de 2024",
+      "b": "El 6 de junio de 2024",
+      "c": "El 7 de julio de 2024",
+      "d": "El 6 de julio de 2024"
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 11,
+     "stem": "El que se hayan notificado actos administrativos por un medio no autorizado por el solicitante ¿afecta a la validez de la notificación?",
+     "options": {
+      "a": "No, porque las notificaciones serán válidas siempre que permitan tener constancia de su envío o puesta a disposición, de la recepción o acceso por el interesado o su representante, de sus fechas y horas, del contenido íntegro, y de la identidad fidedigna del remitente y destinatario de la misma",
+      "b": "Sí, porque el interesado no autorizó el envío por correo",
+      "c": "No, porque las notificaciones serán válidas siempre que permitan tener constancia de su envío.",
+      "d": "Sí, porque en este caso, Don Santiago no tuvo conocimiento de ninguna notificación"
+     },
+     "answer": "a",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "kind": "practico",
+   "title": "Supuesto práctico 2",
+   "context": "Don Alberto Pérez se encuentra el día 2 de abril de 2023 en la Cafetería “Los dos Leones” de la Ciudad de Las Palmas, propiedad de D. Nemesio García. Al ir a pagar la cuenta advierte que le están cobrando productos que no ha consumido. Intenta que le modifiquen la cuenta pero no lo logra con lo que abona el importe pero, al día siguiente, 3 de abril, presenta hoja de reclamación ante la Consejería de Turismo y Empleo del Gobierno de Canarias, por una presunta infracción en materia turística, lo que da lugar a la correspondiente actuación inspectora constatándose que le han cobrado por duplicado dos productos.\n\nCon fecha 20 de abril de 2023 se inicia el procedimiento sancionador mediante Resolución en la cual se otorga un plazo de alegaciones a D. Nemesio Garcia, titular del establecimiento.\n\nD. Alberto Pérez el día 26 de abril de 2023 se presenta en la Consejería preguntando por qué no ha sido notificado del inicio del expediente sancionador, dado que él fue quien presentó la denuncia.\n\nTranscurrido en exceso el plazo conferido, no se presenta alegación alguna por D. Nemesio García, por lo que por el Instructor del procedimiento se formula propuesta de resolución del expediente al órgano competente para resolver proponiendo, al considerarse probada la comisión de infracción administrativa, calificándola como leve y proponiendo la imposición de una multa por importe de 1.400,00 €.\n\nEl órgano competente para resolver, el Director General de Ordenación, Formación y Promoción Turística acepta la propuesta de resolución del Instructor y resuelve con fecha 16 de junio de 2023.\n\nLa notificación de la resolución se intenta el 26 de junio en el domicilio de D. Nemesio García, y posteriormente, en la sede de la Cafetería “Los dos leones”. La notificación no prospera por lo que se determina la inserción de anuncio en el Boletín Oficial correspondiente, publicación que se realiza el día 15 de julio de 2023.\n\nDon Nemesio García tiene conocimiento de la publicación en el Boletín y comparece en la sede de la Consejería, el día 20 de julio, donde se le notifica la Resolución sancionadora, tras lo cual interpone recurso administrativo de alzada el 31 de agosto de 2023.\n\nTranscurrido el plazo de resolución del recurso de alzada sin que se haya dictado resolución expresa, Don Nemesio interpone recurso contencioso administrativo el 5 de febrero de 2024.\n\nSolicitado informe por parte del Servicio Jurídico a la Consejería que ha tramitado el procedimiento, se indica por ésta que el recurso administrativo fue presentado fuera de plazo y que lo mismo ocurre con el recurso contencioso administrativo.",
+   "questions": [
+    {
+     "n": 1,
+     "stem": "Los procedimientos incoados tras la denuncia de un particular se entienden iniciados:",
+     "options": {
+      "a": "De oficio.",
+      "b": "A instancia de parte.",
+      "c": "En virtud de acción pública.",
+      "d": "A petición motivada de otro órgano."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 2,
+     "stem": "¿Cuándo se inicia el cómputo del procedimiento sancionador incoado a D. Nemesio García, a los efectos de determinar la caducidad del procedimiento?",
+     "options": {
+      "a": "El 20 de abril",
+      "b": "El 21 de abril",
+      "c": "El 3 de abril",
+      "d": "El día de comisión del hecho infractor, el 2 de abril."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 3,
+     "stem": "¿Cuándo comienza la prescripción de la infracción cometida por D Nemesio García?",
+     "options": {
+      "a": "El 2 de abril",
+      "b": "El 20 de abril",
+      "c": "El 3 de abril",
+      "d": "El 20 de julio"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 4,
+     "stem": "¿Tiene la consideración de interesado D. Alberto Pérez,?",
+     "options": {
+      "a": "Sí, pero sólo por su posición de denunciante.",
+      "b": "No, porque la presentación de una denuncia no confiere, por sí sola, la condición de interesado en el procedimiento.",
+      "c": "Sí, en cualquier caso.",
+      "d": "Sí, al estar ejerciendo acción pública."
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 5,
+     "stem": "D. Nemesio García tiene derecho en el procedimiento sancionador conforme a la Ley 39/2015:",
+     "options": {
+      "a": "A la presunción de no existencia de responsabilidad administrativa mientras no se demuestre lo contrario",
+      "b": "A la presunción de veracidad de todos los documentos que aporte",
+      "c": "A no ser notificado de los hechos que se le imputen",
+      "d": "A no ser notificado de la autoridad competente para imponer la sanción y de la norma que atribuya tal competencia"
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 6,
+     "stem": "¿Es correcto realizar un solo intento de notificación antes de la publicación en el Boletín oficial?",
+     "options": {
+      "a": "No, es necesario un segundo intento.",
+      "b": "No es necesario hacer un segundo intento",
+      "c": "Sí, es correcto.",
+      "d": "Si, porque al ser persona física no tiene que notificársele a través de la sede electrónica."
+     },
+     "answer": "a",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 7,
+     "stem": "¿El recurso administrativo está presentado dentro de plazo?",
+     "options": {
+      "a": "Sí, porque el plazo vencía el 16 de agosto de 2023",
+      "b": "Sí, porque el plazo vencía el 15 de agosto de 2023",
+      "c": "No, porque el plazo está vencido.",
+      "d": "Sí, porque el plazo vencía el 14 de agosto de 2023"
+     },
+     "answer": "c",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 8,
+     "stem": "¿Qué día vence el plazo para resolver el recurso de alzada presentado?",
+     "options": {
+      "a": "El 30 de agosto de 2023",
+      "b": "El 15 de agosto de 2023",
+      "c": "El 31 de noviembre de 2023",
+      "d": "El 30 de noviembre de 2023"
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 9,
+     "stem": "¿Si no se resuelve en plazo el recurso de alzada presentado, ¿qué efectos tiene el silencio?",
+     "options": {
+      "a": "De inadmisión",
+      "b": "Desestimatorio",
+      "c": "Estimatorio",
+      "d": "Confirmatorio"
+     },
+     "answer": "b",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 10,
+     "stem": "En caso de silencio como el presente en la resolución del recurso ¿qué plazo tiene D. Nemesio para interponer recurso contencioso administrativo?",
+     "options": {
+      "a": "Dos meses desde la finalización del plazo para resolver.",
+      "b": "Dos meses desde la presentación.",
+      "c": "Tres meses desde la presentación.",
+      "d": "El plazo para interponer recurso contencioso administrativo continúa abierto mientras el recurso de alzada no se resuelva de forma expresa."
+     },
+     "answer": "d",
+     "reserve": false,
+     "annulled": false,
+     "note": ""
+    },
+    {
+     "n": 11,
+     "stem": "¿En qué Boletín debió haberse publicado preceptivamente la Resolución del Director General de Ordenación, Formación y Promoción Turística?",
+     "options": {
+      "a": "Boletín Oficial de Canarias",
+      "b": "Boletín Oficial del Estado",
+      "c": "Boletín Oficial de la Provincia de Las Palmas",
+      "d": "Diario oficial de la Unión Europea"
+     },
+     "answer": "b",
+     "reserve": true,
+     "annulled": false,
+     "note": ""
+    }
+   ]
+  }
+ ],
+ "note": "Plantilla provisional publicada por el tribunal el 08/07/2024. En la convocatoria de 2022 cada supuesto tenía 10 preguntas: aquí se puntúa de forma proporcional sobre 10."
+}

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://simucanarias.pages.dev/</loc></url>
-  <url><loc>https://simucanarias.pages.dev/simulador</loc></url>
+  <url><loc>https://simucanarias.pages.dev/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/simulador</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/test-auxiliar-administrativo-canarias/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/examen-auxiliar-administrativo-canarias-resuelto/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/examen-administrativo-c1-canarias-resuelto/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/calculadora-nota-ejercicio-unico-canarias/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/penalizacion-ejercicio-unico-canarias/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://simucanarias.pages.dev/fecha-examen-gobierno-canarias-2026/</loc><lastmod>2026-10-07</lastmod></url>
 </urlset>

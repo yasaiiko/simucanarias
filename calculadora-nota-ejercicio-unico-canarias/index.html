@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<script>if(/github\.io$/.test(location.hostname)){location.replace("https://simucanarias.pages.dev"+location.pathname.replace(/^\/simucanarias/,"").replace(/index\.html$/,"")+location.search+location.hash)}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de nota del ejercicio único Canarias 2026</title>
+<meta name="description" content="Calcula tu nota del ejercicio único del Gobierno de Canarias: test de 50 (−0,20 cada 3 fallos) y supuesto de 25 (−0,40 cada 2 fallos). Gratis.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://simucanarias.pages.dev/calculadora-nota-ejercicio-unico-canarias/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SimuCanarias">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Calculadora de nota del ejercicio único Canarias 2026">
+<meta property="og:description" content="Calcula tu nota del ejercicio único del Gobierno de Canarias: test de 50 (−0,20 cada 3 fallos) y supuesto de 25 (−0,40 cada 2 fallos). Gratis.">
+<meta property="og:url" content="https://simucanarias.pages.dev/calculadora-nota-ejercicio-unico-canarias/">
+<meta property="og:image" content="https://simucanarias.pages.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de nota del ejercicio único Canarias 2026">
+<meta name="twitter:description" content="Calcula tu nota del ejercicio único del Gobierno de Canarias: test de 50 (−0,20 cada 3 fallos) y supuesto de 25 (−0,40 cada 2 fallos). Gratis.">
+<meta name="twitter:image" content="https://simucanarias.pages.dev/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a5cc2'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#060a17" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f7fd" media="(prefers-color-scheme: light)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="../assets/app.css">
+<link rel="stylesheet" href="../assets/seo.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://simucanarias.pages.dev/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Calculadora de nota",
+     "item": "https://simucanarias.pages.dev/calculadora-nota-ejercicio-unico-canarias/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Cómo se calcula la nota del test (primera parte)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cada acierto suma 0,20 puntos y por cada grupo completo de 3 fallos se restan 0,20 (Base 22.5). Nota = 0,20 × aciertos − 0,20 × (fallos ÷ 3, sin decimales), entre 0 y 10. Ejemplo: 35 aciertos y 10 fallos dan 7,00 − 0,60 = 6,40."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo se calcula la nota del supuesto práctico (segunda parte)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cada acierto suma 0,40 puntos y por cada grupo completo de 2 fallos se restan 0,40 (Base 23.6). Ejemplo: 16 aciertos y 5 fallos dan 6,40 − 0,80 = 5,60."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Las preguntas en blanco restan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Las preguntas no contestadas no computan a efectos de penalización (Bases 22.6 y 23.7)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué nota necesito para aprobar el ejercicio único?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Al menos un 5 en cada parte (Bases 22.7 y 23.8) y al menos un 5 de media (Base 21.5). La nota del ejercicio es la media de las dos partes, pero si suspendes una de ellas no eres apto aunque la media llegue a 5."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuántos aciertos necesito como mínimo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En el test, 25 aciertos si no pasas de 2 fallos (cada 3 fallos más, 1 acierto más). En el supuesto, 13 aciertos si no pasas de 1 fallo (cada 2 fallos más, 1 acierto más)."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<canvas id="aurora" aria-hidden="true"></canvas>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../"><span class="logo-mark">S</span>SimuCanarias</a>
+<nav class="top" aria-label="Principal"><span class="indep">Herramienta independiente, no oficial</span><a class="btn small" href="../simulador">Abrir simulador</a></nav>
+</div></header>
+<main id="main" class="wrap narrow seo">
+<nav class="crumbs" aria-label="Migas de pan"><ol><li><a href="../">Inicio</a></li><li aria-current="page">Calculadora de nota</li></ol></nav>
+<header class="hero">
+<p class="eyebrow">Calculadora · Reglas BOC n.º 57/2026</p>
+<h1>Calculadora de nota del ejercicio único (Gobierno de Canarias 2026)</h1>
+<p class="lead">Pon tus aciertos y fallos y verás la nota de cada parte, la media y si eres <strong>APTO</strong>, con la fórmula exacta de las bases 22 y 23. Los blancos se calculan solos.</p>
+<div class="cta-row"><a class="btn xl" href="#calculadora">Calcular mi nota</a><a class="btn ghost xl" href="../simulador#/exam/c2-2022-libre-test2">Hacer un examen oficial gratis</a></div>
+<ul class="trust"><li>Sin registro</li><li>Funciona en el móvil</li><li>Tus respuestas no salen de tu navegador</li><li>Herramienta independiente, no oficial</li></ul>
+<p class="when">Fechas previstas · C1 turno libre: <strong>sáb. 17 oct</strong><span class="days" data-days="2026-10-17T10:00:00+01:00" hidden></span> · C2 turno libre: <strong>sáb. 31 oct</strong><span class="days" data-days="2026-10-31T10:00:00+00:00" hidden></span> · <a href="../fecha-examen-gobierno-canarias-2026/">ver fechas y horas</a></p>
+</header>
+<section id="calculadora" aria-labelledby="h-calc">
+<h2 id="h-calc">Calcula tu nota</h2>
+<form class="card calc" onsubmit="return false" aria-label="Calculadora de nota">
+<fieldset>
+<legend>Parte 1 · Test (50 preguntas)</legend>
+<div class="fields">
+<div><label for="a1">Aciertos</label><input id="a1" type="number" inputmode="numeric" min="0" max="40" value="35"></div>
+<div><label for="f1">Fallos</label><input id="f1" type="number" inputmode="numeric" min="0" max="15" value="10"></div>
+<div><span class="flabel">Blancos</span><output class="box" id="b1" for="a1 f1">5</output></div>
+</div>
+<div class="res" aria-live="polite"><span>Nota de la parte:</span> <span class="mark" id="m1">6,40</span><span class="tag ok" id="t1">Parte superada (≥ 5)</span></div>
+<p class="detail" id="x1">35 × 0,20 = 7,00 · penalización 0,60 (3 grupos de 3 fallos)</p>
+<p class="detail" id="n1">Te queda 1 fallo «gratis»: el siguiente grupo aún no está completo.</p>
+</fieldset>
+<fieldset>
+<legend>Parte 2 · Supuesto práctico (25 preguntas)</legend>
+<div class="fields">
+<div><label for="a2">Aciertos</label><input id="a2" type="number" inputmode="numeric" min="0" max="20" value="16"></div>
+<div><label for="f2">Fallos</label><input id="f2" type="number" inputmode="numeric" min="0" max="9" value="5"></div>
+<div><span class="flabel">Blancos</span><output class="box" id="b2" for="a2 f2">4</output></div>
+</div>
+<div class="res" aria-live="polite"><span>Nota de la parte:</span> <span class="mark" id="m2">5,60</span><span class="tag ok" id="t2">Parte superada (≥ 5)</span></div>
+<p class="detail" id="x2">16 × 0,40 = 6,40 · penalización 0,80 (2 grupos de 2 fallos)</p>
+<p class="detail" id="n2">El próximo fallo te resta 0,40.</p>
+</fieldset>
+<div class="res"><span>Nota del ejercicio (media):</span> <span class="mean" id="mm">6,00</span></div>
+<p class="verdict ok" id="vv" aria-live="polite">APTO: superas las dos partes y la media.</p>
+<noscript><p class="small muted">Activa JavaScript para recalcular. Sin él, usa la fórmula y las tablas de abajo.</p></noscript>
+</form>
+</section>
+
+<section class="card sec" aria-labelledby="h-formula">
+<h2 id="h-formula">La fórmula exacta</h2>
+<ul>
+<li><strong>Parte 1 · Test (50 preguntas):</strong> nota = máx(0; 0,20 × aciertos − 0,20 × ⌊fallos ÷ 3⌋). Base 22.5.</li>
+<li><strong>Parte 2 · Supuesto práctico (25 preguntas):</strong> nota = máx(0; 0,40 × aciertos − 0,40 × ⌊fallos ÷ 2⌋). Base 23.6.</li>
+<li><strong>Ejercicio:</strong> media de las dos partes. Para ser apto necesitas al menos un 5 en cada parte y de media (Bases 21.5, 22.7 y 23.8).</li>
+</ul>
+<p>⌊ ⌋ significa «sin decimales»: solo restan los <strong>grupos completos</strong> de fallos. Con 2 fallos en el test o 1 en el supuesto no pierdes nada. Los blancos nunca restan.</p>
+<p class="srcline">Fuente: <a href="https://sede.gobiernodecanarias.org/boc/boc-a-2026-057-948.pdf" target="_blank" rel="noopener">BOC n.º 57, de 24/03/2026</a> (Bases 21 a 23).</p>
+</section>
+
+<section class="card sec" aria-labelledby="h-ej">
+<h2 id="h-ej">Ejemplos resueltos</h2>
+<div class="tw"><table class="t"><caption>Parte 1 · Test (+0,20 · −0,20 cada 3 fallos)</caption><thead><tr><th class="n" scope="col">Aciertos</th><th class="n" scope="col">Fallos</th><th class="n" scope="col">Blancos</th><th class="n" scope="col">Resta</th><th class="n" scope="col">Nota</th></tr></thead><tbody><tr><td class="n">25</td><td class="n">0</td><td class="n">25</td><td class="n">−0,00</td><td class="n"><span class="tag ok">5,00<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">25</td><td class="n">2</td><td class="n">23</td><td class="n">−0,00</td><td class="n"><span class="tag ok">5,00<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">25</td><td class="n">3</td><td class="n">22</td><td class="n">−0,20</td><td class="n"><span class="tag bad">4,80<span class="sr"> (no apto)</span></span></td></tr><tr><td class="n">28</td><td class="n">9</td><td class="n">13</td><td class="n">−0,60</td><td class="n"><span class="tag ok">5,00<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">30</td><td class="n">10</td><td class="n">10</td><td class="n">−0,60</td><td class="n"><span class="tag ok">5,40<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">35</td><td class="n">10</td><td class="n">5</td><td class="n">−0,60</td><td class="n"><span class="tag ok">6,40<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">40</td><td class="n">8</td><td class="n">2</td><td class="n">−0,40</td><td class="n"><span class="tag ok">7,60<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">45</td><td class="n">5</td><td class="n">0</td><td class="n">−0,20</td><td class="n"><span class="tag ok">8,80<span class="sr"> (apto)</span></span></td></tr></tbody></table></div>
+<div class="tw"><table class="t"><caption>Parte 2 · Supuesto (+0,40 · −0,40 cada 2 fallos)</caption><thead><tr><th class="n" scope="col">Aciertos</th><th class="n" scope="col">Fallos</th><th class="n" scope="col">Blancos</th><th class="n" scope="col">Resta</th><th class="n" scope="col">Nota</th></tr></thead><tbody><tr><td class="n">13</td><td class="n">0</td><td class="n">12</td><td class="n">−0,00</td><td class="n"><span class="tag ok">5,20<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">13</td><td class="n">1</td><td class="n">11</td><td class="n">−0,00</td><td class="n"><span class="tag ok">5,20<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">13</td><td class="n">2</td><td class="n">10</td><td class="n">−0,40</td><td class="n"><span class="tag bad">4,80<span class="sr"> (no apto)</span></span></td></tr><tr><td class="n">15</td><td class="n">6</td><td class="n">4</td><td class="n">−1,20</td><td class="n"><span class="tag bad">4,80<span class="sr"> (no apto)</span></span></td></tr><tr><td class="n">16</td><td class="n">5</td><td class="n">4</td><td class="n">−0,80</td><td class="n"><span class="tag ok">5,60<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">18</td><td class="n">4</td><td class="n">3</td><td class="n">−0,80</td><td class="n"><span class="tag ok">6,40<span class="sr"> (apto)</span></span></td></tr><tr><td class="n">20</td><td class="n">5</td><td class="n">0</td><td class="n">−0,80</td><td class="n"><span class="tag ok">7,20<span class="sr"> (apto)</span></span></td></tr></tbody></table></div>
+<h3>Dos ejercicios completos</h3>
+<ul>
+<li>Test 6,40 y supuesto 5,60 → media <strong>6,00</strong>: <strong>APTO</strong>.</li>
+<li>Test 7,60 y supuesto 4,80 → media 6,20, pero <strong>NO APTO</strong>: el supuesto no llega al 5.</li>
+</ul>
+</section>
+
+<section class="card sec" aria-labelledby="h-min">
+<h2 id="h-min">Cuántos aciertos necesitas para aprobar cada parte</h2>
+<div class="links">
+<div class="tw"><table class="t"><caption>Test · mínimo para el 5</caption><thead><tr><th scope="col">Si tienes</th><th class="n" scope="col">Aciertos</th></tr></thead><tbody><tr><td>0–2 fallos</td><td class="n"><strong>25</strong></td></tr><tr><td>3–5 fallos</td><td class="n"><strong>26</strong></td></tr><tr><td>6–8 fallos</td><td class="n"><strong>27</strong></td></tr><tr><td>9–11 fallos</td><td class="n"><strong>28</strong></td></tr><tr><td>12–14 fallos</td><td class="n"><strong>29</strong></td></tr></tbody></table></div>
+<div class="tw"><table class="t"><caption>Supuesto · mínimo para el 5</caption><thead><tr><th scope="col">Si tienes</th><th class="n" scope="col">Aciertos</th></tr></thead><tbody><tr><td>0–1 fallos</td><td class="n"><strong>13</strong></td></tr><tr><td>2–3 fallos</td><td class="n"><strong>14</strong></td></tr><tr><td>4–5 fallos</td><td class="n"><strong>15</strong></td></tr><tr><td>6–7 fallos</td><td class="n"><strong>16</strong></td></tr></tbody></table></div>
+</div>
+<p>Cada grupo completo de fallos te obliga a acertar una pregunta más. Por eso decidir bien qué dejas en blanco importa: lo explicamos en la <a href="../penalizacion-ejercicio-unico-canarias/">guía de penalización</a>.</p>
+</section>
+
+<section aria-labelledby="h-prueba">
+<h2 id="h-prueba">Comprueba tu nota real con un examen oficial</h2>
+<div class="card cta-band">
+<p class="cta-title">Haz el examen oficial C2 completo y la nota se calcula sola</p>
+<p class="muted">50 preguntas + reserva, cronómetro y corrección con estas mismas reglas. Al terminar ves aciertos, fallos, blancos, penalización y si te habría compensado dejar las dudosas en blanco.</p>
+<div class="cta-row"><a class="btn xl" href="../simulador#/exam/c2-2022-libre-test2">Hazlo cronometrado y con corrección automática (gratis)</a></div>
+<p class="small muted">Sin registro · Corrección con las reglas de 2026 (BOC n.º 57/2026) · Herramienta independiente, no oficial</p>
+</div>
+<div class="card pass">
+<p class="kicker">Pase hasta el examen · C1 + C2</p>
+<p class="price">5,99 € <small>pago único · IVA incl. · reembolso en 14 días</small></p>
+<ul class="check">
+<li>215 preguntas oficiales de 6 exámenes: C2 (test y supuestos) y C1 (tests y supuestos A/B)</li>
+<li>Simulacro completo cronometrado: test + 1 de 2 supuestos oficiales, 100 minutos</li>
+<li>Modo «solo parte 2» para quien conserva la nota del primer ejercicio</li>
+<li>Tests aleatorios con todo el banco oficial y repaso de falladas</li>
+<li>Historial de notas e informe de estrategia de blancos</li>
+</ul>
+<div class="cta-row"><a class="btn sun xl" href="https://carrion840.gumroad.com/l/simucanarias?wanted=true" target="_blank" rel="noopener">Conseguir el pase · 5,99 €</a></div>
+<p class="small muted">Pago seguro con Gumroad (tarjeta, PayPal, Apple Pay o Google Pay). Recibes al momento una clave por email y la pegas en el simulador. Sin suscripción.</p>
+</div>
+</section>
+
+<section class="card sec" aria-labelledby="h-faq">
+<h2 id="h-faq">Preguntas frecuentes</h2>
+<details class="faq"><summary>¿Cómo se calcula la nota del test (primera parte)?</summary><div><p>Cada acierto suma 0,20 puntos y por cada grupo completo de 3 fallos se restan 0,20 (Base 22.5). Nota = 0,20 × aciertos − 0,20 × (fallos ÷ 3, sin decimales), entre 0 y 10. Ejemplo: 35 aciertos y 10 fallos dan 7,00 − 0,60 = 6,40.</p></div></details>
+<details class="faq"><summary>¿Cómo se calcula la nota del supuesto práctico (segunda parte)?</summary><div><p>Cada acierto suma 0,40 puntos y por cada grupo completo de 2 fallos se restan 0,40 (Base 23.6). Ejemplo: 16 aciertos y 5 fallos dan 6,40 − 0,80 = 5,60.</p></div></details>
+<details class="faq"><summary>¿Las preguntas en blanco restan?</summary><div><p>No. Las preguntas no contestadas no computan a efectos de penalización (Bases 22.6 y 23.7).</p></div></details>
+<details class="faq"><summary>¿Qué nota necesito para aprobar el ejercicio único?</summary><div><p>Al menos un 5 en cada parte (Bases 22.7 y 23.8) y al menos un 5 de media (Base 21.5). La nota del ejercicio es la media de las dos partes, pero si suspendes una de ellas no eres apto aunque la media llegue a 5.</p></div></details>
+<details class="faq"><summary>¿Cuántos aciertos necesito como mínimo?</summary><div><p>En el test, 25 aciertos si no pasas de 2 fallos (cada 3 fallos más, 1 acierto más). En el supuesto, 13 aciertos si no pasas de 1 fallo (cada 2 fallos más, 1 acierto más).</p></div></details>
+</section>
+
+<section aria-labelledby="h-sigue">
+<h2 id="h-sigue">Sigue preparando el examen</h2>
+<div class="links"><a class="lcard" href="../test-auxiliar-administrativo-canarias/"><strong>Test Auxiliar Administrativo 2026</strong><span>Qué puedes hacer gratis, 10 preguntas oficiales de muestra y todos los recursos.</span></a>
+<a class="lcard" href="../examen-auxiliar-administrativo-canarias-resuelto/"><strong>Examen Auxiliar (C2) resuelto</strong><span>El cuestionario oficial C2 de 2022 completo, con la plantilla del tribunal.</span></a>
+<a class="lcard" href="../examen-administrativo-c1-canarias-resuelto/"><strong>Examen Administrativo (C1) resuelto</strong><span>La parte teórica oficial C1 (promoción interna 2024) con sus respuestas.</span></a>
+<a class="lcard" href="../penalizacion-ejercicio-unico-canarias/"><strong>Penalización y blancos</strong><span>Cuánto restan los fallos y cuándo compensa contestar si dudas.</span></a>
+<a class="lcard" href="../fecha-examen-gobierno-canarias-2026/"><strong>Fechas del examen 2026</strong><span>Fechas, horas, plazas y cuenta atrás del ejercicio único.</span></a>
+<a class="lcard" href="../simulador"><strong>Abrir el simulador</strong><span>Exámenes oficiales cronometrados y corregidos con las reglas de 2026.</span></a></div>
+</section>
+<div class="share">
+<span>¿Te ha servido? Compártelo con tu grupo de estudio:</span>
+<a class="btn ghost small" href="https://wa.me/?text=Calculadora%20de%20nota%20del%20ejercicio%20%C3%BAnico%20del%20Gobierno%20de%20Canarias%20%28test%20%2B%20supuesto%29%3A%20https%3A//simucanarias.pages.dev/calculadora-nota-ejercicio-unico-canarias/" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn ghost small" href="https://t.me/share/url?url=https%3A%2F%2Fsimucanarias.pages.dev%2Fcalculadora-nota-ejercicio-unico-canarias%2F&amp;text=Calculadora%20de%20nota%20del%20ejercicio%20%C3%BAnico%20del%20Gobierno%20de%20Canarias%20%28test%20%2B%20supuesto%29%3A" target="_blank" rel="noopener">Telegram</a>
+<button class="btn ghost small" type="button" data-copy="https://simucanarias.pages.dev/calculadora-nota-ejercicio-unico-canarias/" hidden>Copiar enlace</button>
+</div>
+
+</main>
+<footer class="site"><div class="wrap">
+<nav aria-label="Guías y exámenes resueltos"><ul class="foot-links"><li><a href="../">Inicio</a></li><li><a href="../simulador">Simulador</a></li><li><a href="../test-auxiliar-administrativo-canarias/">Test Auxiliar Administrativo 2026</a></li><li><a href="../examen-auxiliar-administrativo-canarias-resuelto/">Examen Auxiliar (C2) resuelto</a></li><li><a href="../examen-administrativo-c1-canarias-resuelto/">Examen Administrativo (C1) resuelto</a></li><li><a href="../calculadora-nota-ejercicio-unico-canarias/" aria-current="page">Calculadora de nota</a></li><li><a href="../penalizacion-ejercicio-unico-canarias/">Penalización y blancos</a></li><li><a href="../fecha-examen-gobierno-canarias-2026/">Fechas del examen 2026</a></li></ul></nav>
+<p>SimuCanarias es una herramienta independiente, no oficial, sin relación con el Gobierno de Canarias, su Dirección General de la Función Pública ni sus tribunales. Las preguntas proceden de exámenes publicados por la propia Administración y enlazan a su PDF original. · <a href="../aviso-legal">Aviso legal y privacidad</a></p>
+</div></footer>
+<script src="../assets/bg.js" defer></script>
+<script>
+(function () {
+  var now = Date.now();
+  document.querySelectorAll('[data-days]').forEach(function (el) {
+    var t = Date.parse(el.getAttribute('data-days'));
+    if (isNaN(t)) return;
+    var ms = t - now, d = Math.ceil(ms / 864e5);
+    el.textContent = ms <= 0 ? ' (fecha ya pasada)' : ms < 864e5 ? ' (es hoy o mañana)' : ' (faltan ' + d + ' días)';
+    el.hidden = false;
+  });
+  if (navigator.clipboard) document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText(b.getAttribute('data-copy')).then(function () {
+        b.textContent = '¡Enlace copiado!';
+        setTimeout(function () { b.textContent = 'Copiar enlace'; }, 1600);
+      });
+    });
+  });
+  var hide = document.getElementById('hide-ans');
+  if (hide) {
+    hide.closest('label').hidden = false;
+    hide.addEventListener('change', function () { document.body.classList.toggle('hide-ans', hide.checked); });
+  }
+})();
+</script>
+<script>
+(function () {
+  function $(id) { return document.getElementById(id); }
+  function fmt(c) { return (c / 100).toFixed(2).replace('.', ','); }
+  var PARTS = [
+    { k: '1', n: 50, g: 3, v: 20 },  // Parte 1: +0,20 · −0,20 por cada 3 fallos (Base 22.5)
+    { k: '2', n: 25, g: 2, v: 40 }   // Parte 2: +0,40 · −0,40 por cada 2 fallos (Base 23.6)
+  ];
+  function num(el, max) {
+    var raw = el.value.trim(), v = parseInt(raw, 10);
+    if (isNaN(v)) v = 0;
+    v = Math.max(0, Math.min(max, v));
+    if (raw !== '' && String(v) !== raw) el.value = v;
+    return v;
+  }
+  function part(p) {
+    var aEl = $('a' + p.k), fEl = $('f' + p.k);
+    var a = num(aEl, p.n);
+    var f = num(fEl, p.n - a);
+    aEl.max = p.n - f; fEl.max = p.n - a;
+    var groups = Math.floor(f / p.g);
+    // mark = max(0, value*a − value*floor(f/g)), in hundredths to avoid float noise
+    var c = Math.max(0, (a - groups) * p.v);
+    $('b' + p.k).textContent = p.n - a - f;
+    $('m' + p.k).textContent = fmt(c);
+    $('x' + p.k).textContent = a + ' × ' + fmt(p.v) + ' = ' + fmt(a * p.v) + ' · penalización ' + fmt(groups * p.v) +
+      ' (' + groups + (groups === 1 ? ' grupo' : ' grupos') + ' de ' + p.g + ' fallos)';
+    var free = p.g - 1 - (f % p.g);
+    $('n' + p.k).textContent = a + f >= p.n ? 'Has contestado todas las preguntas.' :
+      free === 0 ? 'El próximo fallo te resta ' + fmt(p.v) + '.' :
+      'Te ' + (free === 1 ? 'queda 1 fallo' : 'quedan ' + free + ' fallos') + ' «gratis»: el siguiente grupo aún no está completo.';
+    var t = $('t' + p.k), ok = c >= 500;
+    t.className = 'tag ' + (ok ? 'ok' : 'bad');
+    t.textContent = ok ? 'Parte superada (≥ 5)' : 'Parte no superada (< 5)';
+    return c;
+  }
+  function run() {
+    var c1 = part(PARTS[0]), c2 = part(PARTS[1]);
+    var mean = Math.round((c1 + c2) / 2);
+    $('mm').textContent = fmt(mean);
+    var ok = c1 >= 500 && c2 >= 500 && mean >= 500, v = $('vv');
+    v.className = 'verdict ' + (ok ? 'ok' : 'bad');
+    v.textContent = ok ? 'APTO: superas las dos partes y la media.' :
+      (c1 < 500 && c2 < 500) ? 'NO APTO: no llegas al 5 en ninguna de las dos partes.' :
+      c1 < 500 ? 'NO APTO: necesitas al menos un 5 en la parte 1 (test).' :
+      'NO APTO: necesitas al menos un 5 en la parte 2 (supuesto).';
+  }
+  ['a1', 'f1', 'a2', 'f2'].forEach(function (id) { $(id).addEventListener('input', run); });
+  run();
+})();
+</script></body>
+</html>

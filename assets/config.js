@@ -8,5 +8,5 @@ window.SIMU_CONFIG = {
     C1: { label: 'C1 Administrativo', iso: '2026-10-17T10:00:00+01:00', text: 'sábado 17 de octubre, 10:00' },
     C2: { label: 'C2 Auxiliar', iso: '2026-10-31T10:00:00+00:00', text: 'sábado 31 de octubre, 10:00' },
   },
-  contactEmail: 'vcarrioncardete@gmail.com',
+  contactUrl: 'https://carrion840.gumroad.com/l/simucanarias',
 };

@@ -136,7 +136,7 @@
       <details class="faq"><summary>¿Esta web es del Gobierno de Canarias?</summary><p>No. Es una herramienta independiente sin relación con el Gobierno de Canarias. Los PDFs oficiales son gratuitos en su web; aquí pagas por el simulador (cronómetro, corrección con las reglas de 2026, estadísticas y repaso), no por las preguntas.</p></details>
       <details class="faq"><summary>¿Sirve si me presento al C1 Administrativo de turno libre?</summary><p>Sí para practicar el formato, la gestión del tiempo y la normativa común. Los exámenes C1 publicados son de promoción interna, así que no cubren todo el temario de turno libre. No te vendemos humo: es un simulador de condiciones reales, no un temario.</p></details>
       <details class="faq"><summary>¿Cómo recibo el acceso?</summary><p>Al pagar en Gumroad recibes una clave de licencia por email (también la verás en la pantalla de compra). Abre el simulador, pulsa «Tengo una clave» y pégala. Funciona en varios dispositivos.</p></details>
-      <details class="faq"><summary>¿Y si encuentro un error?</summary><p>Escríbenos indicando la pregunta. Lo corregimos el mismo día y, si eres cliente y te ha hecho perder tiempo, te devolvemos el dinero.</p></details>
+      <details class="faq"><summary>¿Y si encuentro un error?</summary><p>Si eres cliente, responde al email de compra de Gumroad indicando la pregunta: lo corregimos el mismo día y, si te ha hecho perder tiempo, te devolvemos el dinero.</p></details>
     </div>
   </section>
 
@@ -154,7 +154,7 @@
 
 <footer class="site">
   <div class="wrap">
-    <p>SimuCanarias es una herramienta independiente, sin relación con el Gobierno de Canarias. · <a href="aviso-legal.html">Aviso legal y privacidad</a> · <a href="#" class="js-mail">Contacto</a></p>
+    <p>SimuCanarias es una herramienta independiente, sin relación con el Gobierno de Canarias. · <a href="aviso-legal.html">Aviso legal y privacidad</a></p>
   </div>
 </footer>
 
@@ -165,7 +165,6 @@
   const C = window.SIMU_CONFIG, S = window.Scoring, $ = (id) => document.getElementById(id);
   document.querySelectorAll('.js-price').forEach(e => e.textContent = C.price);
   document.querySelectorAll('.js-buy').forEach(a => a.href = C.gumroadUrl);
-  document.querySelectorAll('.js-mail').forEach(a => a.href = 'mailto:' + C.contactEmail + '?subject=SimuCanarias');
   $('cta-free').href = 'simulador.html#/exam/' + C.freeExam;
 
   // Countdowns

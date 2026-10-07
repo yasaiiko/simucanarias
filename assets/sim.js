@@ -263,7 +263,7 @@
           <div class="card"><h3>Repasar falladas</h3><p class="small muted">${plural(fall, 'pregunta pendiente', 'preguntas pendientes')} de repasar.</p>${fall ? proBtn('#/falladas', 'Repasar ahora') : '<span class="small muted">Haz un examen primero.</span>'}</div>
           <div class="card"><h3>Historial</h3>${hist.length ? `<ul class="small" style="padding-left:18px;margin:0">${hist.slice(0, 6).map(h => `<li>${new Date(h.t).toLocaleDateString('es-ES')} · ${esc(h.title)} · <strong>${h.mean != null ? 'media ' + S.fmt(h.mean) : h.marks.map(m => S.fmt(m)).join(' / ')}</strong></li>`).join('')}</ul>` : '<p class="small muted">Aún no has hecho ningún examen.</p>'}</div>
         </div>
-        <p class="small muted" style="margin-top:24px">Preguntas y respuestas tomadas de los exámenes oficiales publicados por la DGFP del Gobierno de Canarias. Si la normativa ha cambiado después del examen, la respuesta oficial puede no coincidir con la ley vigente. ¿Ves un error? <a href="mailto:${esc(C.contactEmail)}?subject=Error%20SimuCanarias">Avísanos</a>.</p>
+        <p class="small muted" style="margin-top:24px">Preguntas y respuestas tomadas de los exámenes oficiales publicados por la DGFP del Gobierno de Canarias. Si la normativa ha cambiado después del examen, la respuesta oficial puede no coincidir con la ley vigente. ¿Ves un error? Si eres cliente, responde al email de compra de Gumroad y lo corregimos.</p>
       </div>`);
     const d = $('#discard');
     if (d) d.onclick = (e) => { e.preventDefault(); LS.del(SKEY); home(); };

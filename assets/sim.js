@@ -79,7 +79,7 @@
   const SKEY = 'simu_session_v1';
   let SES = null, TICK = null;
   function newSession(def) {
-    SES = { title: def.title, parts: def.parts, minutes: def.minutes, started: Date.now(), answers: {}, doubts: {}, chosen: {}, active: 0, done: false, result: null, practice: !!def.practice };
+    SES = { title: def.title, parts: def.parts, minutes: def.minutes, started: null, answers: {}, doubts: {}, chosen: {}, active: 0, done: false, result: null, practice: !!def.practice };
     save();
     location.hash = '#/run';
   }
@@ -155,19 +155,19 @@
     if (ex.kind === 'practico') {
       return {
         title: ex.title, minutes: 50,
-        parts: [{ kind: 'practico', title: 'Supuesto práctico', choices: ex.blocks.map((b, i) => ({ title: b.title, context: b.context, questions: blockQs(ex, i) })) }],
+        parts: [{ kind: 'practico', title: 'Supuesto práctico', choices: ex.blocks.map((b, i) => ({ title: b.title, context: b.context, note: ex.note, questions: blockQs(ex, i) })) }],
       };
     }
     const qs = ex.blocks.flatMap((b, i) => blockQs(ex, i));
     const n = qs.filter(q => !q.reserve).length;
-    return { title: ex.title, minutes: Math.max(10, Math.round(n * 1)), parts: [{ kind: 'general', title: 'Test', questions: qs }] };
+    return { title: ex.title, minutes: Math.max(10, Math.round(n * 1)), parts: [{ kind: 'general', title: 'Test', note: ex.note, questions: qs }] };
   }
   async function supuestoChoices(group) {
     const cat = await getCatalog();
     const out = [];
     for (const e of cat.exams.filter(e => e.group === group && e.kind === 'practico')) {
       const ex = await getExam(e.id);
-      ex.blocks.forEach((b, i) => out.push({ title: `${b.title} · ${shortSrc(ex)}`, context: b.context, questions: blockQs(ex, i) }));
+      ex.blocks.forEach((b, i) => out.push({ title: `${b.title} · ${shortSrc(ex)}`, context: b.context, note: ex.note, questions: blockQs(ex, i) }));
     }
     return out;
   }
@@ -282,7 +282,38 @@
     </div>`);
   }
 
-  function timeLeft() { return SES.started + SES.minutes * 60000 - Date.now(); }
+  function timeLeft() { return (SES.started || Date.now()) + SES.minutes * 60000 - Date.now(); }
+
+  function intro() {
+    const rows = SES.parts.map((p) => {
+      const g = S.RULES[p.kind].group;
+      if (p.choices) {
+        const n = scoredSet(p.choices[0].questions).length;
+        return `<li><strong>${esc(p.title)}</strong>: eliges 1 de ${p.choices.length} supuestos (${n} preguntas puntuables cada uno). Acierto +${S.fmt(10 / n)} · cada ${g} fallos −${S.fmt(10 / n)}.</li>`;
+      }
+      const n = scoredSet(p.questions).length, res = p.questions.filter(q => q.reserve).length;
+      return `<li><strong>${esc(p.title)}</strong>: ${n} preguntas${res ? ` + ${res} de reserva (solo cuentan si se anula alguna)` : ''}. Acierto +${S.fmt(10 / n)} · cada ${g} fallos −${S.fmt(10 / n)}.</li>`;
+    }).join('');
+    const notes = [...new Set(SES.parts.flatMap(p => (p.choices || [p]).map(c => c.note).filter(Boolean)))];
+    $('#site-header').classList.remove('hide');
+    view(`<div class="wrap narrow" style="padding-top:24px;padding-bottom:40px">
+      <a href="#/" id="cancel-intro">← Volver</a>
+      <h1 style="margin-top:10px">${esc(SES.title)}</h1>
+      <div class="card">
+        <div class="kpis" style="margin-top:0"><div class="kpi"><b>${SES.minutes} min</b><span>tiempo</span></div><div class="kpi"><b>${SES.parts.length === 2 ? '2 partes' : '1 parte'}</b><span>${SES.practice ? 'práctica' : 'corrección oficial 2026'}</span></div></div>
+        <ul style="padding-left:18px">${rows}</ul>
+        <ul class="small muted" style="padding-left:18px">
+          <li>Las preguntas en blanco no restan. Pulsa una opción para marcarla y otra vez para desmarcarla.</li>
+          <li>Marca con <strong>✋ Dudo</strong> las preguntas en las que arriesgas: al corregir verás si te compensó.</li>
+          <li>Tus respuestas se guardan solas: si cierras la página puedes continuar después (el tiempo sigue corriendo).</li>
+        </ul>
+        ${notes.map(n => `<p class="notice small">${esc(n)}</p>`).join('')}
+        <button class="btn" id="start" style="width:100%;margin-top:6px">Empezar · el cronómetro arranca ahora</button>
+      </div>
+    </div>`);
+    $('#start').onclick = () => { SES.started = Date.now(); save(); run(); };
+    $('#cancel-intro').onclick = (e) => { e.preventDefault(); LS.del(SKEY); location.hash = '#/'; };
+  }
   function fmtTime(ms) {
     ms = Math.max(0, ms);
     const s = Math.floor(ms / 1000), h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60;
@@ -293,6 +324,7 @@
     SES = LS.get(SKEY, null);
     if (!SES) { location.hash = '#/'; return; }
     if (SES.done) { location.hash = '#/result'; return; }
+    if (!SES.started) return intro();
     const pi = SES.active;
     const p = SES.parts[pi];
     const qs = partQs(p, pi);
@@ -306,11 +338,12 @@
           <div class="card" style="${ch === i ? 'border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)' : ''}">
             <h3>${esc(c.title)} ${ch === i ? '<span class="tag ok">Elegido</span>' : ''}</h3>
             <p class="small muted">${esc(c.context.slice(0, 220))}${c.context.length > 220 ? '…' : ''}</p>
+            ${c.note ? `<p class="small notice">${esc(c.note)}</p>` : ''}
             <button class="btn small ${ch === i ? '' : 'ghost'}" data-choose="${i}">${ch === i ? 'Respondiendo este' : 'Elegir este supuesto'}</button>
           </div>`).join('')}</div>`;
       if (ch != null) choiceHtml += `<details open class="context" style="margin-bottom:12px"><summary><strong>Enunciado del supuesto</strong></summary>\n${esc(p.choices[ch].context)}</details>`;
     }
-    const nav = qs.length ? `<div class="navgrid">${qs.map((q, i) => `<a href="#q-${i}" data-jump="${i}" class="${SES.answers[q.uid] ? 'done' : ''} ${SES.doubts[q.uid] ? 'dq' : ''}" title="${q.reserve ? 'Reserva' : ''}">${q.reserve ? 'R' : ''}${q.reserve ? qs.filter(x => x.reserve).indexOf(q) + 1 : q.n}</a>`).join('')}</div>` : '';
+    const nav = qs.length ? `<details class="navwrap" ${innerWidth > 700 ? 'open' : ''}><summary class="small">Ir a una pregunta</summary><div class="navgrid">${qs.map((q, i) => `<a href="#q-${i}" data-jump="${i}" class="${SES.answers[q.uid] ? 'done' : ''} ${SES.doubts[q.uid] ? 'dq' : ''}" title="${q.reserve ? 'Reserva' : ''}">${q.reserve ? 'R' : ''}${q.reserve ? qs.filter(x => x.reserve).indexOf(q) + 1 : q.n}</a>`).join('')}</div></details>` : '';
     const qHtml = qs.map((q, i) => `
       <div class="q" id="q-${i}">
         <div class="qhead"><p class="stem"><span class="num">${q.reserve ? 'Reserva ' + (qs.filter(x => x.reserve).indexOf(q) + 1) : q.n + '.'}</span>${esc(q.stem)}</p>
@@ -320,9 +353,8 @@
     $('#site-header').classList.add('hide');
     view(`
       <div class="bar"><div class="wrap">
-        <a href="#/" class="small" id="exit">✕</a>
-        <strong class="small" style="max-width:40ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(SES.title)}</strong>
-        <span class="spacer"></span>
+        <a href="#/" class="small" id="exit" title="Salir (se guarda tu progreso)">✕</a>
+        <strong class="small bar-title">${esc(SES.title)}</strong>
         <span class="small muted" id="progress"></span>
         <span class="timer" id="timer">--:--</span>
         <button class="btn small" id="submit">Entregar</button>
@@ -335,7 +367,7 @@
         ${qs.length ? `<div class="cta-row">${pi < SES.parts.length - 1 ? `<button class="btn ghost" data-part="${pi + 1}">Ir a ${esc(SES.parts[pi + 1].title)} →</button>` : ''}<button class="btn" id="submit2">Entregar examen</button></div>` : ''}
       </div>`);
     function progress() {
-      const n = Object.keys(SES.answers).length;
+      const n = SES.parts.reduce((s, pp, i) => s + scoredSet(partQs(pp, i)).filter(q => SES.answers[q.uid]).length, 0);
       $('#progress').textContent = `${n}/${allScored}`;
     }
     progress();

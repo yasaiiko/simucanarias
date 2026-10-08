@@ -501,7 +501,11 @@
         <p class="src">Pregunta ${q.reserve ? 'de reserva ' : ''}${q.n} · <a href="${esc(q.srcUrl)}" target="_blank" rel="noopener">${esc(q.src)}</a> · respuesta según la plantilla oficial publicada ${esc(q.srcDate)}</p>
       </div>`;
     }).join('');
-    const upsell = PRO ? '' : `<div class="card" style="border-color:var(--sun);margin:18px 0"><h3>¿Te ha servido?</h3><p class="small">Con el <strong>Pase hasta el examen</strong> (${esc(C.price)}, pago único) haces el simulacro completo cronometrado (test + 1 de 2 supuestos oficiales), todos los exámenes oficiales C1 y C2, tests aleatorios y repaso de falladas.</p><button class="btn sun" data-buy>Desbloquear por ${esc(C.price)}</button></div>`;
+    // Days left to each upcoming exam, shown in the upsell ("Quedan 9 días para el C1 Administrativo y 23 días para el C2 Auxiliar").
+    const left = ['C1', 'C2'].map(k => C.examDates && C.examDates[k]).filter(d => d && Date.parse(d.iso) > Date.now())
+      .map(d => { const n = Math.floor((Date.parse(d.iso) - Date.now()) / 864e5); return `${n < 1 ? 'menos de un día' : n === 1 ? '1 día' : n + ' días'} para el ${esc(d.label.split(' (')[0])}`; });
+    const urgency = left.length ? `<p class="small" style="color:var(--sun);font-weight:600">Quedan ${left.join(' y ')}.</p>` : '';
+    const upsell = PRO ? '' : `<div class="card" style="border-color:var(--sun);margin:18px 0"><h3>¿Te ha servido?</h3>${urgency}<p class="small">Con el <strong>Pase hasta el examen</strong> (${esc(C.price)}, pago único) haces el simulacro completo cronometrado (test + 1 de 2 supuestos oficiales), todos los exámenes oficiales C1 y C2, tests aleatorios y repaso de falladas.</p><button class="btn sun" data-buy>Desbloquear por ${esc(C.price)}</button></div>`;
     view(`<div class="wrap" style="padding-top:24px;padding-bottom:50px">
       <a href="#/">← Volver al simulador</a>
       <h1 style="margin-top:10px">Resultado</h1>

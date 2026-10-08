@@ -96,11 +96,35 @@
 <header class="hero">
 <p class="eyebrow">Plantilla de respuestas · Ejercicio único 2026</p>
 <h1>Plantilla del examen del Gobierno de Canarias 2026 (C1 y C2)</h1>
-<p class="lead">Aquí tendrás la plantilla de respuestas en cuanto el tribunal la publique. Mientras tanto ya puedes calcular tu nota con la penalización oficial: cuenta tus aciertos y fallos de cada parte y la calculadora hace el resto.</p>
-<div class="cta-row"><a class="btn xl" href="#calculadora">Calcular mi nota</a><a class="btn ghost xl" href="../simulador#/exam/c2-2022-libre-test2">Practicar con un examen oficial gratis</a></div>
+<p class="lead">Apunta aquí tus respuestas al salir del examen: en cuanto el tribunal publique la plantilla, verás tu nota al momento con la penalización oficial. Mientras tanto, también puedes calcularla contando tus aciertos y fallos.</p>
+<div class="cta-row"><a class="btn xl" href="#corrector">Corregir mi examen</a><a class="btn ghost xl" href="../simulador#/exam/c2-2022-libre-test2">Practicar con un examen oficial gratis</a></div>
 <ul class="trust"><li>Sin registro</li><li>Funciona en el móvil</li><li>Herramienta independiente, no oficial</li></ul>
 <p class="when">Fechas previstas · C1 turno libre: <strong>sáb. 17 oct</strong><span class="days" data-days="2026-10-17T10:00:00+01:00" hidden></span> · C2 turno libre: <strong>sáb. 31 oct</strong><span class="days" data-days="2026-10-31T10:00:00+00:00" hidden></span> · <a href="../fecha-examen-gobierno-canarias-2026/">ver fechas y horas</a></p>
 </header>
+<section class="card sec" id="corrector" aria-labelledby="h-corr">
+<h2 id="h-corr">Corrige tu examen con la plantilla</h2>
+<p>Escribe las respuestas que marcaste y se guardan solas. Si la plantilla oficial aún no se ha publicado, vuelve cuando salga y verás tu nota al momento, sin escribirlas otra vez.</p>
+<form class="calc" onsubmit="return false" aria-label="Corrector de la plantilla">
+<p><label for="cx-conv">Convocatoria</label><br><select id="cx-conv" style="width:100%;box-sizing:border-box;font:inherit">
+<option value="C111L26">C1 Administrativo · turno libre (17 oct)</option>
+<option value="C111I26">C1 Administrativo · promoción interna (17 oct, tarde)</option>
+<option value="C211I26">C2 Auxiliar · promoción interna (17 oct, tarde)</option>
+<option value="C211L26">C2 Auxiliar · turno libre (31 oct)</option>
+</select></p>
+<p><label for="cx-p1">Parte 1 · test: tus respuestas en orden, con las de reserva</label><br>
+<textarea id="cx-p1" rows="3" spellcheck="false" autocapitalize="characters" placeholder="Ejemplo: 1A 2C 3- 4D… o simplemente AC-D…" style="width:100%;box-sizing:border-box;font:inherit"></textarea>
+<span class="small muted" id="cx-c1"></span></p>
+<fieldset style="border:0;padding:0;margin:0 0 8px"><legend>Parte 2 · supuesto que elegiste</legend>
+<label><input type="radio" name="cx-sup" value="A" checked> Supuesto A</label> &nbsp; <label><input type="radio" name="cx-sup" value="B"> Supuesto B</label></fieldset>
+<p><label for="cx-p2">Parte 2 · tus respuestas en orden, con las de reserva</label><br>
+<textarea id="cx-p2" rows="2" spellcheck="false" autocapitalize="characters" style="width:100%;box-sizing:border-box;font:inherit"></textarea>
+<span class="small muted" id="cx-c2"></span></p>
+<div class="cta-row"><button class="btn" type="button" id="cx-go">Guardar y corregir</button></div>
+<div id="cx-out" aria-live="polite"></div>
+<p class="small muted">Usa «-» para las que dejaste en blanco; los números y espacios se ignoran. Tus respuestas solo se guardan en este navegador.</p>
+</form>
+</section>
+
 <section id="calculadora" aria-labelledby="h-calc">
 <h2 id="h-calc">Calcula tu nota</h2>
 <form class="card calc" onsubmit="return false" aria-label="Calculadora de nota">
@@ -141,7 +165,7 @@
 <tr><td>Administrativo C1 · promoción interna</td><td>sáb. 17 oct, 16:00</td><td>Pendiente: se publica después del examen</td></tr>
 <tr><td>Auxiliar C2 · turno libre</td><td>sáb. 31 oct, 10:00</td><td>Pendiente: se publica después del examen</td></tr>
 </tbody></table></div>
-<p>La plantilla oficial la publica el tribunal en la web de la Dirección General de la Función Pública. Cuando salga, la añadiremos aquí con un corrector para que compruebes tu examen pregunta a pregunta. Manda siempre la publicación oficial.</p>
+<p>La plantilla oficial la publica el tribunal en la web de la Dirección General de la Función Pública. En cuanto salga, la cargaremos aquí y el corrector de arriba te dará tu nota al momento. Manda siempre la publicación oficial.</p>
 </section>
 
 <section class="card sec" aria-labelledby="h-corregir">
@@ -268,5 +292,8 @@
   ['a1', 'f1', 'a2', 'f2'].forEach(function (id) { $(id).addEventListener('input', run); });
   run();
 })();
-</script></body>
+</script><script src="../assets/scoring.js"></script>
+<script src="../assets/plantillas.js"></script>
+<script src="../assets/corrector.js"></script>
+</body>
 </html>

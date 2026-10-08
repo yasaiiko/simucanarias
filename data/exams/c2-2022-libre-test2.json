@@ -331,7 +331,8 @@
      "answer": "c",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 24,
@@ -345,7 +346,8 @@
      "answer": "d",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, subvenciones es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 25,
@@ -415,7 +417,8 @@
      "answer": "a",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 30,
@@ -429,7 +432,8 @@
      "answer": "b",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, subvenciones es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 31,
@@ -541,7 +545,8 @@
      "answer": "d",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 39,
@@ -569,7 +574,8 @@
      "answer": "c",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 41,
@@ -583,7 +589,8 @@
      "answer": "d",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, subvenciones es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 42,
@@ -597,7 +604,8 @@
      "answer": "a",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 43,
@@ -709,7 +717,8 @@
      "answer": "d",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, subvenciones es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 51,
@@ -723,7 +732,8 @@
      "answer": "c",
      "reserve": true,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 52,
@@ -737,7 +747,8 @@
      "answer": "b",
      "reserve": true,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, subvenciones es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 53,
@@ -769,5 +780,6 @@
     }
    ]
   }
- ]
+ ],
+ "note": "Examen oficial de 2022, cuando el test también preguntaba contratación y subvenciones. En el temario de 2026 esos temas son de la parte práctica y van al supuesto (parte 2): las 11 preguntas afectadas llevan una nota al corregir, y el simulacro completo C2 ya no las incluye en la parte 1."
 }

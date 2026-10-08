@@ -493,7 +493,7 @@ def pass_card(heading_tag='p', heading='Pase hasta el examen · C1 + C2'):
 <p class="price">{PRICE} <small>pago único · IVA incl. · reembolso en 14 días</small></p>
 <ul class="check">
 <li>{TOTAL_QUESTIONS} preguntas oficiales de 6 exámenes: C2 (test y supuestos) y C1 (tests y supuestos A/B)</li>
-<li>Simulacro completo cronometrado: test + 1 de 2 supuestos oficiales (100 min en C1; 80 en C2, cuyos supuestos oficiales tienen 10 preguntas)</li>
+<li>Simulacro completo cronometrado: test + 1 de 2 supuestos oficiales (100 min en C1; 68 en C2, con el tiempo proporcional a sus preguntas oficiales)</li>
 <li>Modo «solo parte 2» para quien conserva la nota del primer ejercicio</li>
 <li>Tests aleatorios con todo el banco oficial y repaso de falladas</li>
 <li>Historial de notas e informe de estrategia de blancos</li>
@@ -1132,7 +1132,7 @@ def page_fecha():
     return slug, render(slug, title, desc, 'Fechas del examen 2026', body, graph, scripts=COUNTDOWN_JS)
 
 
-SAMPLE_NS = [1, 6, 11, 16, 21, 26, 31, 36, 41, 46]
+SAMPLE_NS = [1, 6, 11, 16, 21, 26, 31, 36, 43, 46]  # no contratación/subvenciones (2026: parte práctica)
 
 
 def page_hub(exams):

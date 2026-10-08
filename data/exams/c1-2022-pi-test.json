@@ -625,7 +625,8 @@
      "answer": "b",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 45,
@@ -681,7 +682,8 @@
      "answer": "b",
      "reserve": false,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 49,
@@ -751,7 +753,8 @@
      "answer": "b",
      "reserve": true,
      "annulled": false,
-     "note": ""
+     "note": "En el temario de 2026, contratación es de la parte práctica: se pregunta en el supuesto (parte 2), no en el test.",
+     "parte2_2026": true
     },
     {
      "n": 54,
@@ -769,5 +772,6 @@
     }
    ]
   }
- ]
+ ],
+ "note": "Examen oficial de 2022, cuando el test también preguntaba contratación. En el temario de 2026 ese tema es de la parte práctica y va al supuesto (parte 2): las 3 preguntas afectadas llevan una nota al corregir, y el simulacro completo C1 ya no las incluye en la parte 1."
 }

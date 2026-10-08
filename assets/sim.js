@@ -198,19 +198,22 @@
     const choices = await supuestoChoices(group);
     const part2 = { kind: 'practico', title: 'Parte 2 · Supuesto práctico', choices: choices.slice(0, 2), note: 'Elige 1 de los 2 supuestos, como en el examen real.' };
     if (onlyPart2) { const m = Math.max(10, Math.round(50 * scoredSet(part2.choices[0].questions).length / 25)); return { title: `Parte 2 (${group}) · ${m} minutos`, minutes: m, parts: [part2] }; }
+    // Part 1 only asks the general part of the 2026 programme. Older tests also asked contratación and subvenciones,
+    // which in 2026 belong to the practical part (supuesto), so those questions (parte2_2026) are left out.
+    const gen = (qs) => qs.filter(q => !q.parte2_2026);
     let q1;
     if (group === 'C2') {
-      q1 = blockQs(await getExam('c2-2022-libre-test2'), 0);
+      q1 = renumber(gen(blockQs(await getExam('c2-2022-libre-test2'), 0)));
     } else {
       const a = blockQs(await getExam('c1-2024-pi-teorico'), 0).filter(q => !q.reserve);
-      const b = shuffle(blockQs(await getExam('c1-2022-pi-test'), 0).filter(q => !q.reserve && !q.annulled));
+      const b = shuffle(gen(blockQs(await getExam('c1-2022-pi-test'), 0)).filter(q => !q.reserve && !q.annulled));
       q1 = renumber(a.concat(b.slice(0, Math.max(0, 50 - a.length))));
     }
     const n1 = scoredSet(q1).length, n2 = scoredSet(part2.choices[0].questions).length;
     const minutes = Math.round(100 * (n1 + n2) / 75);
     return {
       title: `Simulacro completo ${group} · ${minutes} minutos`, minutes,
-      parts: [{ kind: 'general', title: 'Parte 1 · Test', questions: q1 }, part2],
+      parts: [{ kind: 'general', title: 'Parte 1 · Test', note: 'La parte 1 solo trae preguntas de la parte general del temario de 2026. Las de contratación y subvenciones de exámenes anteriores no entran: este año se preguntan en el supuesto.', questions: q1 }, part2],
     };
   }
 
@@ -271,7 +274,7 @@
 
         <h2 style="margin-top:28px">Simulacros como el día del examen</h2>
         <div class="grid2">
-          <div class="card"><h3>C2 Auxiliar · completo</h3><p class="small muted">80 min · Parte 1: test oficial C2 (50 + 4 reservas) · Parte 2: elige 1 de 2 supuestos oficiales C2 de 2022 (10 preguntas cada uno; tiempo y nota proporcionales).</p>${proBtn('#/sim/C2', 'Empezar simulacro C2')}</div>
+          <div class="card"><h3>C2 Auxiliar · completo</h3><p class="small muted">68 min · Parte 1: test oficial C2 sin las preguntas de contratación y subvenciones, que en 2026 van al supuesto (41 + 2 reservas) · Parte 2: elige 1 de 2 supuestos oficiales C2 de 2022 (10 preguntas cada uno). Tiempo y nota proporcionales.</p>${proBtn('#/sim/C2', 'Empezar simulacro C2')}</div>
           <div class="card"><h3>C1 Administrativo · completo</h3><p class="small muted">100 min · Parte 1: 50 preguntas oficiales C1 · Parte 2: elige entre el supuesto A y el B oficiales (25 preguntas + 3 reservas).</p>${proBtn('#/sim/C1', 'Empezar simulacro C1')}</div>
           <div class="card"><h3>Solo parte 2</h3><p class="small muted">Para quien conserva la nota de la primera parte: 50 min en C1 (25 preguntas) y 20 min en C2 (10 preguntas).</p><div class="cta-row" style="margin:6px 0 0">${proBtn('#/p2/C2', 'C2')} ${proBtn('#/p2/C1', 'C1')}</div></div>
           <div class="card"><h3>Test aleatorio</h3><p class="small muted">Preguntas mezcladas de todo el banco oficial (test general).</p>

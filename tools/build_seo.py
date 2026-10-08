@@ -58,6 +58,11 @@ PAGES = [
      'blurb': 'Fechas, horas, plazas y cuenta atrás del ejercicio único.'},
 ]
 SLUGS = [p['slug'] for p in PAGES]
+# Hand-written pages (not generated here) that still get footer/related links and a sitemap entry.
+EXTRA = [
+    {'slug': 'plantilla-examen-gobierno-canarias-2026', 'nav': 'Plantilla del examen 2026',
+     'blurb': 'La plantilla de respuestas de C1 y C2 en cuanto se publique, y cómo corregir tu examen.'},
+]
 
 
 # ----------------------------------------------------------------------------- helpers
@@ -500,7 +505,7 @@ def pass_card(heading_tag='p', heading='Pase hasta el examen · C1 + C2'):
 
 def related(current):
     cards = []
-    for p in PAGES:
+    for p in EXTRA + PAGES:
         if p['slug'] == current:
             continue
         cards.append(f'<a class="lcard" href="../{p["slug"]}/"><strong>{esc(p["nav"])}</strong><span>{esc(p["blurb"])}</span></a>')
@@ -523,7 +528,7 @@ def share(slug, text):
 
 def footer(current):
     items = ['<li><a href="../">Inicio</a></li>', '<li><a href="../simulador">Simulador</a></li>']
-    for p in PAGES:
+    for p in PAGES + EXTRA:
         cur = ' aria-current="page"' if p['slug'] == current else ''
         items.append(f'<li><a href="../{p["slug"]}/"{cur}>{esc(p["nav"])}</a></li>')
     return f"""<footer class="site"><div class="wrap">
@@ -1216,7 +1221,7 @@ def page_hub(exams):
 
 # ----------------------------------------------------------------------------- sitemap
 def sitemap():
-    urls = [BASE + '/', BASE + '/simulador'] + [url_of(s) for s in SLUGS]
+    urls = [BASE + '/', BASE + '/simulador'] + [url_of(s) for s in SLUGS] + [url_of(p['slug']) for p in EXTRA]
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     lines += [f'  <url><loc>{u}</loc><lastmod>{LASTMOD}</lastmod></url>' for u in urls]
